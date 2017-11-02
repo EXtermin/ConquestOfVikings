@@ -111,6 +111,7 @@ namespace QonquestOfVikings
                 {
                     player1.Regen();
                     savegame.save(player1);
+                    Console.Clear();
                     battle();
                 }
                 else
