@@ -40,8 +40,9 @@ namespace QonquestOfVikings
             SetHealth(GetMaxHealth());
             SetMana(GetMaxMana());
         }
-        public void LoadStats(int level, int exp, int basedmg, int health, int maxhealth, int mana, int maxmana )
+        public void LoadStats(string playerName, int level, int exp, float basedmg, int health, int maxhealth, int mana, int maxmana )
         {
+            SetPlayerName(playerName);
             SetLevel(level);
             SetExp(exp);
             SetBaseDamage(basedmg);
@@ -49,6 +50,10 @@ namespace QonquestOfVikings
             SetMaxHealth(maxhealth);
             SetMana(mana);
             SetMaxMana(maxmana);
+        }
+        protected void SetPlayerName(string playername)
+        {
+            this.playerName = playername;
         }
         public string GetPlayerName()
         {

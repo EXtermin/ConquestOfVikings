@@ -22,8 +22,9 @@ namespace QonquestOfVikings
 
             if(answer == "y" || answer == "yes")
             {
+                Player player1 = new Player("test");
                 SavegameManager load = new SavegameManager();
-                load.load();
+                load.load(player1);
             }
             else
             {
