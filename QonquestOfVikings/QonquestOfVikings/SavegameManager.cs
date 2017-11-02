@@ -32,16 +32,29 @@ namespace QonquestOfVikings
                 StreamReader reader = new StreamReader("Savegame.dat");
                 string strAllFile = reader.ReadToEnd().Replace("\r\n", "\n").Replace("\n\r", "\n");
                 string[] arrLines = strAllFile.Split(new char[] { '\n' });
+                int level;
+                int exp;
+                int basedmg;
                 int health;
+                int maxhealth;
+                int mana;
+                int maxmana;
 
 
+                Int32.TryParse(arrLines[0], out level);
+                Int32.TryParse(arrLines[1], out exp);
+                Int32.TryParse(arrLines[2], out basedmg);
                 Int32.TryParse(arrLines[0], out health);
+                Int32.TryParse(arrLines[0], out maxhealth);
+                Int32.TryParse(arrLines[0], out mana);
+                Int32.TryParse(arrLines[0], out maxmana);
 
-                Console.WriteLine(health);
+
+                
                 Console.ReadLine();
 
 
-                player1.LoadStats();
+                player1.LoadStats( level, exp, basedmg, health, maxhealth, mana, maxmana);
             }
         }
     }
