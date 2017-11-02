@@ -4,3 +4,9 @@ D:\wamp64\www\School\Leerjaar 2\Periode 5\EigenProject\QonquestOfVikings\Qonques
 D:\wamp64\www\School\Leerjaar 2\Periode 5\EigenProject\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csprojResolveAssemblyReference.cache
 D:\wamp64\www\School\Leerjaar 2\Periode 5\EigenProject\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
 D:\wamp64\www\School\Leerjaar 2\Periode 5\EigenProject\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe.config
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.pdb
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csprojResolveAssemblyReference.cache

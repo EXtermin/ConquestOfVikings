@@ -11,6 +11,7 @@ namespace QonquestOfVikings
 
         static void Main(string[] args)
         {
+            SavegameManager load = new SavegameManager();
             Console.WriteLine("Please enter your name:");
 
             string playerName = Console.ReadLine();

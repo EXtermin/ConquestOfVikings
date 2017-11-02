@@ -33,12 +33,6 @@ namespace QonquestOfVikings
         public int GetAttackDamage(int attack)
         {
             int damage;
-            if (plyattack == 1)
-                
-            else if (plyattack == 2)
-                Console.WriteLine(" You used: Stomp and did {0} damage", plydamage);
-            else if (plyattack == 3)
-                Console.WriteLine(" You used: Heal");
             rnd.Next();
             if (attack == 1)
             {

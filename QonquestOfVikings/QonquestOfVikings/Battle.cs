@@ -12,9 +12,11 @@ namespace QonquestOfVikings
     {
         Player player1;
         Enemy bandit;
+        SavegameManager savegame;
         public Battle(Player player)
         {
             this.player1 = player;
+            this.savegame = new SavegameManager();
         }
 
         public void GenerateEnemy()
@@ -23,7 +25,7 @@ namespace QonquestOfVikings
             if(player1.GetLevel() > 0 && player1.GetLevel() < 5)
             {
                 int level = lvlEnemy.Next(1, 3);
-                int mana = 50;
+                int mana = 30;
                 int health = 100;
                 for(int i = 1; i < level; i++)
                 {
@@ -35,7 +37,7 @@ namespace QonquestOfVikings
             else
             {
                 int level = lvlEnemy.Next(5, 15);
-                int mana = 50;
+                int mana = 30;
                 int health = 100;
                 for (int i = 1; i < level; i++)
                 {
@@ -107,6 +109,8 @@ namespace QonquestOfVikings
 
                 if (answer == "y" || answer == "yes")
                 {
+                    player1.Regen();
+                    savegame.save(player1);
                     battle();
                 }
                 else

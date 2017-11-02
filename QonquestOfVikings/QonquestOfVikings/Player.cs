@@ -35,7 +35,21 @@ namespace QonquestOfVikings
         {
             SetExp(GetExp() + gain);
         }
-
+        public void Regen()
+        {
+            SetHealth(GetMaxHealth());
+            SetMana(GetMaxMana());
+        }
+        public void LoadStats(int level, int exp, int basedmg, int health, int maxhealth, int mana, int maxmana )
+        {
+            SetLevel(level);
+            SetExp(exp);
+            SetBaseDamage(basedmg);
+            SetHealth(health);
+            SetMaxHealth(maxhealth);
+            SetMana(mana);
+            SetMaxMana(maxmana);
+        }
         public string GetPlayerName()
         {
             return playerName;
