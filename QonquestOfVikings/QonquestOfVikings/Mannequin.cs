@@ -168,5 +168,10 @@ namespace QonquestOfVikings
         {
             this.maxMana = maxMana;
         }
+
+        public bool GetIsPlayer()
+        {
+            return this.isPlayer;
+        }
     }
 }
