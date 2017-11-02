@@ -94,8 +94,11 @@ namespace QonquestOfVikings
                 Console.Clear();
 
             } while (!(bandit.GetHealth() <= 0));
+            Sound sound = new Sound();
+            sound.StoryBackground();
             if (bandit.GetHealth() <= 0)
             {
+                
                 Random rnd = new Random();
                 Console.WriteLine("The bandit died yay! C:");
                 player1.GainExp(rnd.Next(10, 70));
@@ -121,6 +124,7 @@ namespace QonquestOfVikings
             }
             else
             {
+                sound.Defeat();
                 Console.WriteLine("oh nuuu you died at level {0}", player1.GetLevel());
             }
         }

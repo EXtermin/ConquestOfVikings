@@ -38,9 +38,12 @@ namespace QonquestOfVikings
 
         public int GetAttackDamage(int attack, Mannequin user)
         {
+            Sound sound = new Sound();
             rnd.Next();
             if (attack == 1)
             {
+                sound.Hit();
+                sound.BattleBackground();
                 return attack1.UseAttack(user);
             }
             else if (attack == 2)
@@ -52,6 +55,8 @@ namespace QonquestOfVikings
                     Int32.TryParse(choice, out attack);
                     return GetAttackDamage(attack, user);
                 }
+                sound.Hit();
+                sound.BattleBackground();
                 return dmg;
             }
             else if (attack == 3)
@@ -63,6 +68,8 @@ namespace QonquestOfVikings
                     Int32.TryParse(choice, out attack);
                     return GetAttackDamage(attack, user);
                 }
+                sound.Heal();
+                sound.BattleBackground();
                 return dmg;
             }
             else

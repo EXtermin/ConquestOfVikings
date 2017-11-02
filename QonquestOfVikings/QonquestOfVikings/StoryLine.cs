@@ -36,7 +36,7 @@ namespace QonquestOfVikings
             Console.Clear();
             Console.WriteLine("But one day... when {0} was walking trough a street... in a town...", player1.GetPlayerName());
             sound.BattleBackground();
-            Console.WriteLine("\n {0} got suddenly attacked!");
+            Console.WriteLine("\n {0} got suddenly attacked!",player1.GetPlayerName());
             Thread.Sleep(3000);
 
             Battle();

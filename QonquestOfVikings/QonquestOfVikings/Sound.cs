@@ -32,12 +32,12 @@ namespace QonquestOfVikings
         public void Hit()
         {
             SoundPlayer snd = new SoundPlayer(@"Sound/AttackSound.wav");
-            snd.Play();
+            snd.PlaySync();
         }
-        public void LvlUp()
+        public void Heal()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/ExpSound.wav");
-            snd.Play();
+            SoundPlayer snd = new SoundPlayer(@"Sound/HealSound.wav");
+            snd.PlaySync();
         }
     }
 }
