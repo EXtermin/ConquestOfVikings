@@ -27,7 +27,7 @@ namespace QonquestOfVikings.Attacks
             this.cc = new Utils.ConsoleControl();
         }
 
-        public void UseAttack(Player user)
+        public int UseAttack(Player user)
         {
             if(user.GetMana() >= manaCost)
             {
@@ -49,11 +49,13 @@ namespace QonquestOfVikings.Attacks
                     else
                         cc.AttackUse("The enemy: {0} and did {1} damage", this.attackName, false, damage);
                 }
+                return damage;
             }
             else
             {
                 if (user.GetIsPlayer())
                     cc.WriteLine("Not enough mana...");
+                return -1;
             }
         }
     }

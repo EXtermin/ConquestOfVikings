@@ -17,6 +17,9 @@ namespace QonquestOfVikings
         private int mana;
         private int maxMana;
         private bool isPlayer;
+        private Attacks.Main attack1;
+        private Attacks.Main attack2;
+        private Attacks.Main attack3;
 
         protected Mannequin(int health, int level, float baseDamage, int mana, bool isPlayer, int exp = 0)
         {
@@ -28,60 +31,39 @@ namespace QonquestOfVikings
             this.isPlayer = isPlayer;
             this.maxHealth = this.health;
             this.maxMana = this.mana;
+            this.attack1 = new Attacks.Slash();
+            this.attack2 = new Attacks.Kick();
+            this.attack3 = new Attacks.Heal();
         }
 
-        public int GetAttackDamage(int attack)
+        public int GetAttackDamage(int attack, Player user)
         {
-            int damage;
             rnd.Next();
             if (attack == 1)
             {
-                int min = (int)(1 * baseDamage);
-                int max = (int)(20 * baseDamage);
-                damage = rnd.Next(min, max);
-                if (isPlayer)
-                    Console.WriteLine(" You used: Slash and did {0} damage", damage);
-                else
-                    Console.WriteLine(" The Bandit used: Slash and did {0} damage", damage);
-                return damage;
+                return attack1.UseAttack(user);
             }
             else if (attack == 2)
             {
-                if (mana > 3)
+                int dmg = attack2.UseAttack(user);
+                if(dmg == -1)
                 {
-                    int min = (int)(5 * baseDamage);
-                    int max = (int)(25 * baseDamage);
-                    mana -= 3;
-                    damage = rnd.Next(min, max);
-                    if (isPlayer)
-                        Console.WriteLine(" You used: Stomp and did {0} damage", damage);
-                    else
-                        Console.WriteLine(" The Bandit used: Stomp and did {0} damage", damage);
-                    return damage;
+                    string choice = Console.ReadLine();
+                    Int32.TryParse(choice, out attack);
+                    return GetAttackDamage(attack, user);
                 }
-                if(isPlayer)
-                    Console.WriteLine("Not enough mana... Retry:");
-                string choice = Console.ReadLine();
-                Int32.TryParse(choice, out attack);
-                return GetAttackDamage(attack);
+                return dmg;
             }
             else if (attack == 3)
             {
-                if (mana > 6)
+                int dmg = attack3.UseAttack(user);
+                if (dmg == -1)
                 {
-                    SetHealth(GetHealth() + 30);
-                    mana -= 6;
-                    if (isPlayer)
-                        Console.WriteLine(" You used: Heal");
-                    else
-                        Console.WriteLine(" The Bandit used: Heal");
-                    return 0;
+                    string choice = Console.ReadLine();
+                    Int32.TryParse(choice, out attack);
+                    return GetAttackDamage(attack, user);
                 }
-                if (isPlayer)
-                    Console.WriteLine("Not enough mana... Retry:");
-                string choice = Console.ReadLine();
-                Int32.TryParse(choice, out attack);
-                return GetAttackDamage(attack);
+                return dmg;
             }
             else
             {
@@ -89,7 +71,7 @@ namespace QonquestOfVikings
                     Console.WriteLine("Invalid Choice Retry:");
                 string choice = Console.ReadLine();
                 Int32.TryParse(choice, out attack);
-                return GetAttackDamage(attack);
+                return GetAttackDamage(attack, user);
             }
 
         }
