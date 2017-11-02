@@ -155,5 +155,18 @@ namespace QonquestOfVikings
         {
             return this.isPlayer;
         }
+
+        public Attacks.Main GetAttack1()
+        {
+            return this.attack1;
+        }
+        public Attacks.Main GetAttack2()
+        {
+            return this.attack2;
+        }
+        public Attacks.Main GetAttack3()
+        {
+            return this.attack3;
+        }
     }
 }

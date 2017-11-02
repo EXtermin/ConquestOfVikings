@@ -63,9 +63,9 @@ namespace QonquestOfVikings
                 Console.WriteLine("\n The bandit (Level: {0}) has: {1} HP - {2} MP", bandit.GetLevel(), bandit.GetHealth(), bandit.GetMana());
                 Console.WriteLine("\n");
                 Console.WriteLine("Choose an attack:");
-                Console.WriteLine("   -1 Slash");
-                Console.WriteLine("   -2 Stomp");
-                Console.WriteLine("   -3 Heal");
+                Console.WriteLine("1. " + player1.GetAttack1().GetAttackName());
+                Console.WriteLine("2. " + player1.GetAttack2().GetAttackName());
+                Console.WriteLine("3. " + player1.GetAttack3().GetAttackName());
 
 
                 string choise = Console.ReadLine();

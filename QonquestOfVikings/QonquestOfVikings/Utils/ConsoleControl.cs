@@ -16,7 +16,7 @@ namespace QonquestOfVikings.Utils
         public void AttackUse(string line, string attackName, bool isHeal, int damage = 0)
         {
             if(isHeal)
-                Console.WriteLine(line);
+                Console.WriteLine(line, attackName);
             else
                 Console.WriteLine(line, attackName, damage);
         }

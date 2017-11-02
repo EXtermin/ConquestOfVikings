@@ -59,5 +59,10 @@ namespace QonquestOfVikings.Attacks
                 return -1;
             }
         }
+
+        public string GetAttackName()
+        {
+            return this.attackName;
+        }
     }
 }
