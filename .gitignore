@@ -4,3 +4,7 @@ QonquestOfVikings/QonquestOfVikings/bin/
 QonquestOfVikings/QonquestOfVikings/obj/Debug/
 
 QonquestOfVikings/\.vs/QonquestOfVikings/v15/\.suo
+
+*.exe
+
+*.pdb
