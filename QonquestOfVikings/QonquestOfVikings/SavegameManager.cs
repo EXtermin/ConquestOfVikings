@@ -25,7 +25,7 @@ namespace QonquestOfVikings
             }
         }
 
-        public void load(Player player)
+        public void load(Player player1)
         {
             if(File.Exists("Savegame.dat"))
             {
@@ -41,7 +41,7 @@ namespace QonquestOfVikings
                 Console.ReadLine();
 
 
-                player.LoadStats();
+                player1.LoadStats();
             }
         }
     }
