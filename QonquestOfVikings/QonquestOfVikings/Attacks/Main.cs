@@ -27,7 +27,7 @@ namespace QonquestOfVikings.Attacks
             this.cc = new Utils.ConsoleControl();
         }
 
-        public int UseAttack(Player user)
+        public int UseAttack(Mannequin user)
         {
             if(user.GetMana() >= manaCost)
             {

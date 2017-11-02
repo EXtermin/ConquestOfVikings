@@ -36,7 +36,7 @@ namespace QonquestOfVikings
             this.attack3 = new Attacks.Heal();
         }
 
-        public int GetAttackDamage(int attack, Player user)
+        public int GetAttackDamage(int attack, Mannequin user)
         {
             rnd.Next();
             if (attack == 1)

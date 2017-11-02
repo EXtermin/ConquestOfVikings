@@ -71,7 +71,7 @@ namespace QonquestOfVikings
                 string choise = Console.ReadLine();
                 Int32.TryParse(choise, out plyattack);
 
-                plydamage = player1.GetAttackDamage(plyattack);
+                plydamage = player1.GetAttackDamage(plyattack, player1);
                 bandit.Damage(plydamage);
 
                 if (bandit.GetHealth() <= 0)
@@ -80,7 +80,7 @@ namespace QonquestOfVikings
                 }
 
                 enmattack = bandit.GetAttack();
-                enmdamage = bandit.GetAttackDamage(enmattack);
+                enmdamage = bandit.GetAttackDamage(enmattack, bandit);
                 player1.Damage(enmdamage);
                 
 

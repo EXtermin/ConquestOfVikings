@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Army.cs" />
+    <Compile Include="Attacks\Heal.cs" />
+    <Compile Include="Attacks\Kick.cs" />
+    <Compile Include="Attacks\Main.cs" />
+    <Compile Include="Attacks\Slash.cs" />
     <Compile Include="Battle.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Mannequin.cs" />
@@ -53,6 +57,7 @@
     <Compile Include="Quests.cs" />
     <Compile Include="SavegameManager.cs" />
     <Compile Include="StoryLine.cs" />
+    <Compile Include="Utils\ConsoleControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
