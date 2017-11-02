@@ -31,6 +31,7 @@ namespace QonquestOfVikings.Attacks
         {
             if(user.GetMana() >= manaCost)
             {
+                user.SetMana(user.GetMana() - manaCost);
                 int minDamage = (int)(minBaseDamage * user.GetBaseDamage());
                 int maxDamage = (int)(maxBaseDamage * user.GetBaseDamage());
                 int damage = rnd.Next(minDamage, maxDamage);

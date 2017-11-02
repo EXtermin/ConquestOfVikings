@@ -136,7 +136,7 @@ namespace QonquestOfVikings
             return this.mana;
         }
 
-        protected void SetMana(int mana)
+        public void SetMana(int mana)
         {
             this.mana = mana;
         }
