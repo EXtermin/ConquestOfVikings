@@ -36,15 +36,39 @@ namespace QonquestOfVikings
             }
             else
             {
-                int level = lvlEnemy.Next(5, 15);
+                int playerLevel = player1.GetLevel();
+                int levelMarge = lvlEnemy.Next(-2, 8);
                 int mana = 30;
                 int health = 100;
-                for (int i = 1; i < level; i++)
+                float baseMarge = 0.3f;
+                float baseDamage = 1;
+
+                for(int i = 1; i < playerLevel; i++)
                 {
+                    baseDamage = baseDamage * baseMarge;
                     mana += 5;
                     health += 10;
                 }
-                bandit = new Enemy(health, level, mana);
+                if (1 < levelMarge)
+                {
+                    for (int i = 1; i < levelMarge; i++)
+                    {
+                        baseDamage = baseDamage * baseMarge;
+                        mana += 5;
+                        health += 10;
+                    }
+                }
+                else
+                {
+                    for (int i = 1; i > levelMarge; i--)
+                    {
+                        baseDamage = baseDamage / baseMarge;
+                        mana -= 5;
+                        health -= 10;
+                    }
+                }
+                
+                bandit = new Enemy(health, levelMarge, mana);
             }
         }
 
