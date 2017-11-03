@@ -42,33 +42,15 @@ namespace QonquestOfVikings
                 int health = 100;
                 float baseMarge = 0.3f;
                 float baseDamage = 1;
+                int enemyLevel = playerLevel + levelMarge;
 
-                for(int i = 1; i < playerLevel; i++)
+                for(int i = 1; i < enemyLevel; i++)
                 {
                     baseDamage = baseDamage * baseMarge;
                     mana += 5;
                     health += 10;
-                }
-                if (1 < levelMarge)
-                {
-                    for (int i = 1; i < levelMarge; i++)
-                    {
-                        baseDamage = baseDamage * baseMarge;
-                        mana += 5;
-                        health += 10;
-                    }
-                }
-                else
-                {
-                    for (int i = 1; i > levelMarge; i--)
-                    {
-                        baseDamage = baseDamage / baseMarge;
-                        mana -= 5;
-                        health -= 10;
-                    }
-                }
-                
-                bandit = new Enemy(health, levelMarge, mana);
+                }         
+                bandit = new Enemy(health, enemyLevel, mana);
             }
         }
 

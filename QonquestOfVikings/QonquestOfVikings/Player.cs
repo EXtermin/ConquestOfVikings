@@ -24,6 +24,7 @@ namespace QonquestOfVikings
                 SetExp(0);
                 SetLevel(GetLevel() + 1);
                 SetBaseDamage(GetBaseDamage() + 0.3f);
+                SetHealPower(GetHealPower() + 5);
                 SetMaxMana(GetMaxMana() + 5);
                 SetMana(GetMaxMana());
                 SetMaxHealth(GetMaxHealth() + 10);

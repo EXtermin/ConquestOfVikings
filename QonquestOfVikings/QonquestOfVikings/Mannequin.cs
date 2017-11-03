@@ -14,6 +14,7 @@ namespace QonquestOfVikings
         private int exp;
         Random rnd = new Random();
         private float baseDamage;
+        private int healPower;
         private int mana;
         private int maxMana;
         private bool isPlayer;
@@ -26,6 +27,7 @@ namespace QonquestOfVikings
             this.health = health;
             this.level = level;
             this.baseDamage = baseDamage;
+            this.healPower = 30;
             this.mana = mana;
             this.exp = exp;
             this.isPlayer = isPlayer;
@@ -68,6 +70,7 @@ namespace QonquestOfVikings
                     Int32.TryParse(choice, out attack);
                     return GetAttackDamage(attack, user);
                 }
+                this.health = this.health + this.healPower;
                 sound.Heal();
                 sound.BattleBackground();
                 return dmg;
@@ -174,6 +177,16 @@ namespace QonquestOfVikings
         public Attacks.Main GetAttack3()
         {
             return this.attack3;
+        }
+
+        public int GetHealPower()
+        {
+            return this.healPower;
+        }
+
+        protected void SetHealPower(int healPower)
+        {
+            this.healPower = healPower;
         }
     }
 }
