@@ -35,27 +35,43 @@ namespace QonquestOfVikings.Attacks
                 int minDamage = (int)(minBaseDamage * user.GetBaseDamage());
                 int maxDamage = (int)(maxBaseDamage * user.GetBaseDamage());
                 int damage = rnd.Next(minDamage, maxDamage);
-
+                Sound sound = new Sound();
                 if (user.GetIsPlayer())
                 {
                     if (isHeal)
+                    {
                         cc.AttackUse("You used: {0}", this.attackName, true);
+                        user.Heal();
+                        sound.Heal();
+                        sound.BattleBackground();
+                    }
                     else
+                    {
                         cc.AttackUse("You used: {0} and did {1} damage", this.attackName, false, damage);
+                        sound.Hit();
+                        sound.BattleBackground();
+                    }
                 }
                 else
                 {
                     if (isHeal)
+                    {
                         cc.AttackUse("The enemy used: {0}", this.attackName, true);
+                        user.Heal();
+                        sound.Heal();
+                        sound.BattleBackground();
+                    }
                     else
+                    {
                         cc.AttackUse("The enemy: {0} and did {1} damage", this.attackName, false, damage);
+                        sound.Hit();
+                        sound.BattleBackground();
+                    }
                 }
                 return damage;
             }
             else
             {
-                if (user.GetIsPlayer())
-                    cc.WriteLine("Not enough mana...");
                 return -1;
             }
         }

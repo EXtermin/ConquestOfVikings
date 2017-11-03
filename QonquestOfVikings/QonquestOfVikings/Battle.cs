@@ -55,9 +55,13 @@ namespace QonquestOfVikings
         }
 
         public void battle()
-        {            
+        {
+            Sound sound = new Sound();
+            sound.BattleBackground();
+            Console.WriteLine("\n {0} got suddenly attacked!", player1.GetPlayerName());
+            Thread.Sleep(3000);
+
             int plyattack;
-            int enmattack;
             int plydamage;
             int enmdamage;
 
@@ -77,7 +81,7 @@ namespace QonquestOfVikings
                 string choise = Console.ReadLine();
                 Int32.TryParse(choise, out plyattack);
 
-                plydamage = player1.GetAttackDamage(plyattack, player1);
+                plydamage = player1.Attacks(plyattack, player1);
                 bandit.Damage(plydamage);
 
                 if (bandit.GetHealth() <= 0)
@@ -85,8 +89,7 @@ namespace QonquestOfVikings
                     break;
                 }
 
-                enmattack = bandit.GetAttack();
-                enmdamage = bandit.GetAttackDamage(enmattack, bandit);
+                enmdamage = bandit.GetAttack();
                 player1.Damage(enmdamage);
                 
 
@@ -96,11 +99,10 @@ namespace QonquestOfVikings
                     break;
                 }
 
-                Thread.Sleep(2000);
+                Thread.Sleep(1200);
                 Console.Clear();
 
             } while (!(bandit.GetHealth() <= 0));
-            Sound sound = new Sound();
             sound.StoryBackground();
             if (bandit.GetHealth() <= 0)
             {

@@ -18,9 +18,9 @@ namespace QonquestOfVikings
         private int mana;
         private int maxMana;
         private bool isPlayer;
-        private Attacks.Main attack1;
-        private Attacks.Main attack2;
-        private Attacks.Main attack3;
+        protected Attacks.Main attack1;
+        protected Attacks.Main attack2;
+        protected Attacks.Main attack3;
 
         protected Mannequin(int health, int level, float baseDamage, int mana, bool isPlayer, int exp = 0)
         {
@@ -38,57 +38,58 @@ namespace QonquestOfVikings
             this.attack3 = new Attacks.Heal();
         }
 
-        public int GetAttackDamage(int attack, Mannequin user)
+        public int Attacks(int attackNumber, Mannequin user)
         {
-            Sound sound = new Sound();
-            rnd.Next();
-            if (attack == 1)
+            int dmg = 0;
+            switch (attackNumber)
             {
-                sound.Hit();
-                sound.BattleBackground();
-                return attack1.UseAttack(user);
+                case 1:
+                    return attack1.UseAttack(user);
+                case 2:
+                    dmg = attack2.UseAttack(user);
+                    dmg = NewAttack(dmg, user);
+                    return dmg;
+                case 3:
+                    dmg = attack3.UseAttack(user);
+                    dmg = NewAttack(dmg, user);
+                    return dmg;
+                default:
+                    return NewAttack(-2, user);
+
             }
-            else if (attack == 2)
+        }
+
+        public int NewAttack(int dmg, Mannequin user)
+        {
+            if (dmg == -1)
             {
-                int dmg = attack2.UseAttack(user);
-                if(dmg == -1)
-                {
-                    string choice = Console.ReadLine();
-                    Int32.TryParse(choice, out attack);
-                    return GetAttackDamage(attack, user);
-                }
-                sound.Hit();
-                sound.BattleBackground();
-                return dmg;
-            }
-            else if (attack == 3)
-            {
-                int dmg = attack3.UseAttack(user);
-                if (dmg == -1)
-                {
-                    string choice = Console.ReadLine();
-                    Int32.TryParse(choice, out attack);
-                    return GetAttackDamage(attack, user);
-                }
-                this.health = this.health + this.healPower;
-                sound.Heal();
-                sound.BattleBackground();
-                return dmg;
-            }
-            else
-            {
-                if (isPlayer)
-                    Console.WriteLine("Invalid Choice Retry:");
+                if (user.isPlayer)
+                    Console.WriteLine("Not enough mana!");
+                int attack;
                 string choice = Console.ReadLine();
                 Int32.TryParse(choice, out attack);
-                return GetAttackDamage(attack, user);
+                return Attacks(attack, user);
             }
-
+            else if(dmg == -2)
+            {
+                if (user.isPlayer)
+                    Console.WriteLine("Invalid choice!");
+                int attack;
+                string choice = Console.ReadLine();
+                Int32.TryParse(choice, out attack);
+                return Attacks(attack, user);
+            }
+            return dmg;
         }
 
         public void Damage(int dmg)
         {
             this.health -= dmg;
+        }
+
+        public void Heal()
+        {
+            this.health = this.health + this.healPower;
         }
 
         public int GetExp()

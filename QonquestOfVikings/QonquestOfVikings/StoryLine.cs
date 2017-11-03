@@ -33,11 +33,9 @@ namespace QonquestOfVikings
             Thread.Sleep(1500);
             Console.WriteLine("\n For a purpose... a purpose to live... and die for...");
             Thread.Sleep(2500);
+            Console.WriteLine("\n But one day... when {0} was walking trough a street... in a town...", player1.GetPlayerName());
+            Thread.Sleep(2000);
             Console.Clear();
-            Console.WriteLine("But one day... when {0} was walking trough a street... in a town...", player1.GetPlayerName());
-            sound.BattleBackground();
-            Console.WriteLine("\n {0} got suddenly attacked!",player1.GetPlayerName());
-            Thread.Sleep(3000);
 
             Battle();
             
