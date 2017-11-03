@@ -42,6 +42,10 @@ namespace QonquestOfVikings
             Battle();
             
         }
+        public void Middle()
+        {
+
+        }
 
         public void Battle()
         {
