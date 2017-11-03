@@ -42,7 +42,7 @@ namespace QonquestOfVikings
         }
         public void Middle()
         {
-
+            Console.WriteLine("Phew! {0}",player1.GetPlayerName());
         }
 
         public void Battle()
