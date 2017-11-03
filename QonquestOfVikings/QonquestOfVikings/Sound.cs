@@ -27,7 +27,7 @@ namespace QonquestOfVikings
         public void StoryBackground()
         {
             SoundPlayer snd = new SoundPlayer(@"Sound/BackgroundStorySound.wav");
-            snd.Play();
+            snd.PlayLooping();
         }
         public void Hit()
         {
