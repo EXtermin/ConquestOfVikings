@@ -23,7 +23,7 @@ namespace QonquestOfVikings
                     SavegameManager load = new SavegameManager();
                     load.load(player1);
                     StoryLine start = new StoryLine(player1);
-                    start.Begin();
+                    start.Middle();
                 }
                 else
                 {
