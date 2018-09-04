@@ -57,6 +57,7 @@ namespace QonquestOfVikings
         public void battle()
         {
             Sound sound = new Sound();
+            StoryLine middle = new StoryLine(player1);
             sound.BattleBackground();
             Console.WriteLine("\n {0} got suddenly attacked!", player1.GetPlayerName());
             Thread.Sleep(3000);
@@ -123,10 +124,13 @@ namespace QonquestOfVikings
                     player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
-                    battle();
+                    middle.Middle();
+
                 }
                 else
                 {
+                    player1.Regen();
+                    savegame.save(player1);
                     Console.WriteLine("\n \n oh... thats fine! have an awesome day! bai!");
                 }
             }

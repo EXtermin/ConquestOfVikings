@@ -33,7 +33,7 @@ namespace QonquestOfVikings
             Thread.Sleep(1500);
             Console.WriteLine("\n For a purpose... a purpose to live... and die for...");
             Thread.Sleep(2500);
-            Console.WriteLine("\n But one day... when {0} was walking trough a street... in a town...", player1.GetPlayerName());
+            Console.WriteLine("\n But one day... when {0} was walking trough a street...", player1.GetPlayerName());
             Thread.Sleep(2000);
             Console.Clear();
 
@@ -42,7 +42,33 @@ namespace QonquestOfVikings
         }
         public void Middle()
         {
-            Console.WriteLine("Phew! {0}",player1.GetPlayerName());
+            Console.WriteLine("Phew! {0} was that tough?",player1.GetPlayerName());
+            Console.WriteLine("Well lets continue! Where do you want to go next? \n");
+
+            Console.WriteLine("1) Shop");
+            Console.WriteLine("2) Arena");
+            Console.WriteLine("3) Exit town");
+            Console.WriteLine("4) Battle again");
+
+            string choice = Console.ReadLine();
+            if(choice == "1")
+            {
+
+            }
+            else if (choice == "2")
+            {
+
+            }
+            else if (choice == "3")
+            {
+
+            }
+            else if (choice == "4")
+            {
+                Battle();
+            }
+
+
         }
 
         public void Battle()

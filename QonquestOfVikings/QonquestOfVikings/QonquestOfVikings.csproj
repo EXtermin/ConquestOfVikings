@@ -54,7 +54,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quests.cs" />
+    <Compile Include="Shop.cs" />
     <Compile Include="SavegameManager.cs" />
     <Compile Include="Sound.cs" />
     <Compile Include="StoryLine.cs" />
