@@ -17,3 +17,10 @@ C:\Users\Patrick\Documents\MEGA\Personal Projects\ConquestOfVikings\QonquestOfVi
 C:\Users\Patrick\Documents\MEGA\Personal Projects\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe
 C:\Users\Patrick\Documents\MEGA\Personal Projects\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.pdb
 D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe.config
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.pdb
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csprojAssemblyReference.cache
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
+D:\Documenten\GitHub\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
