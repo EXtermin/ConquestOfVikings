@@ -19,6 +19,8 @@ namespace QonquestOfVikings
                 string answer = Console.ReadLine();
                 if (answer == "y" || answer == "yes")
                 {
+                    Sound sound = new Sound();
+                    sound.StoryBackground();
                     Player player1 = new Player("test");
                     SavegameManager load = new SavegameManager();
                     load.load(player1);
