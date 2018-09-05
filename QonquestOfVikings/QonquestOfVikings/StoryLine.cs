@@ -74,25 +74,18 @@ namespace QonquestOfVikings
 
         public void EndBeginning()
         {
-            {
-                Console.Clear();
-                Console.WriteLine("\n As you walk out of town you are greeded by the town's guard. ");
-                Thread.Sleep(2000);
-                Console.WriteLine("\n You've known him for most of your life now. He was like the father you never had.");
-                Thread.Sleep(2000);
-                Console.WriteLine("\n Growing up alone wasn't easy for you but he always helped you along your way. His name was Asgier.");
-                Thread.Sleep(2000);
-                Console.WriteLine("\n As you walk by Asgier, you both node and you dissapear onto a path. You take the path north through a gaint forest.");
-                Thread.Sleep(2000);
-                Console.WriteLine("\n While you are going deeper into the forest you start hearing noises behind the tree's. \n \n ");
-
-                Console.WriteLine("1) Look behind tree's");
-                Console.WriteLine("2) Keep walking");
-
-            }
-            
-       
-
+            Console.Clear();
+            Console.WriteLine("\n As you walk out of town you are greeded by the town's guard. ");
+            Thread.Sleep(2000);
+            Console.WriteLine("\n You've known him for most of your life now. He was like the father you never had.");
+            Thread.Sleep(2000);
+            Console.WriteLine("\n Growing up alone wasn't easy for you but he always helped you along your way. His name was Asgier.");
+            Thread.Sleep(2000);
+            Console.WriteLine("\n As you walk by Asgier, you both node and you dissapear onto a path. You take the path north through a gaint forest.");
+            Thread.Sleep(2000);
+            Console.WriteLine("\n While you are going deeper into the forest you start hearing noises behind the tree's. \n \n ");
+            Console.WriteLine("1) Look behind tree's");
+            Console.WriteLine("2) Keep walking");
             string choice = Console.ReadLine();
             if (choice == "1")
             {
