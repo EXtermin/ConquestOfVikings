@@ -61,7 +61,7 @@ namespace QonquestOfVikings
             }
             else if (choice == "3")
             {
-
+                EndBeginning();
             }
             else if (choice == "4")
             {
@@ -69,6 +69,13 @@ namespace QonquestOfVikings
             }
 
 
+        }
+
+        public void EndBeginning()
+        {
+            Console.Clear();
+            Console.WriteLine("As you walk out of town you are greeded by the town's guard. \n" +
+                "You've known him for most of your life now. He was like a father you never had.");
         }
 
         public void Battle()
