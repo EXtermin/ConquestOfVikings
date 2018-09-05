@@ -112,7 +112,7 @@ namespace QonquestOfVikings
                 Thread.Sleep(2000);
                 Console.WriteLine(" ....");
                 Thread.Sleep(2000);
-                Console.WriteLine(" It's a trap! your foot is stuck in a bear trap but its to weak to hurt you. As you look around you get " +
+                Console.WriteLine("\n It's a trap! your foot is stuck in a bear trap but its to weak to hurt you. As you look around you get " +
                     "\n attacked by a bandit.");
                 Thread.Sleep(3500);
                 Console.Clear();
