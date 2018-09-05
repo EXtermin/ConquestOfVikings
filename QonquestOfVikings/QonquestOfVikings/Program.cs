@@ -12,6 +12,18 @@ namespace QonquestOfVikings
 
         static void Main(string[] args)
         {
+            Intro welcome = new Intro();
+            int origWidth, width;
+            int origHeight, height;
+            origWidth = Console.WindowWidth;
+            origHeight = Console.WindowHeight;
+            width = origWidth + 50;
+            height = origHeight + 2;
+            Console.SetWindowSize(width, height);
+            Console.WriteLine("{0} ---- {1}",Console.WindowWidth,
+                                  Console.WindowHeight);
+            Console.ReadKey(true);
+            
             if (File.Exists("Savegame.dat"))
             {
                 Console.WriteLine("Want to continue your last adventure?");
@@ -25,11 +37,25 @@ namespace QonquestOfVikings
                     SavegameManager load = new SavegameManager();
                     load.load(player1);
                     StoryLine start = new StoryLine(player1);
-                    start.Middle();
+                    Console.Clear();
+                    Console.WriteLine("Do you want to see the intro again?");
+                    Console.WriteLine("yes/no (y/n)");
+                    string anwser = Console.ReadLine();
+                    if(answer == "y" || answer == "yes")
+                    {
+                        welcome.loadIntro();
+                        start.Middle();
+                    }
+                    else
+                    {
+                        start.Middle();
+
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Please enter your name:");
+                    welcome.loadIntro();
+                    Console.WriteLine("\n \n Please enter your name:");
                     string playerName = Console.ReadLine();
                     Player player1 = new Player(playerName);
                     StoryLine start = new StoryLine(player1);
@@ -38,7 +64,9 @@ namespace QonquestOfVikings
             }
             else
             {
-                Console.WriteLine("Please enter your name:");
+                
+                welcome.loadIntro();
+                Console.WriteLine("\n \n Please enter your name:");
                 string playerName = Console.ReadLine();
                 Player player1 = new Player(playerName);
                 StoryLine start = new StoryLine(player1);

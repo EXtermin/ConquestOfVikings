@@ -22,27 +22,28 @@ namespace QonquestOfVikings
 
         public void Begin()
         {
+            Console.Clear();
             Sound sound = new Sound();
 
             sound.StoryBackground();
             Console.WriteLine("Welkom {0}", player1.GetPlayerName());
-            Thread.Sleep(1000);
+            Thread.Sleep(2500);
             Console.WriteLine("\n \n \n The story begins...");
-            Thread.Sleep(2000);
+            Thread.Sleep(2500);
             Console.WriteLine("\n A lonely viking... travelling.. across lands... seas... searching...");
-            Thread.Sleep(1500);
+            Thread.Sleep(2500);
             Console.WriteLine("\n For a purpose... a purpose to live... and die for...");
             Thread.Sleep(2500);
             Console.WriteLine("\n But one day... when {0} was walking trough a street...", player1.GetPlayerName());
-            Thread.Sleep(2000);
+            Thread.Sleep(2500);
             Console.Clear();
 
-            Battle();
+            battleBandit();
             
         }
         public void Middle()
         {
-            Console.WriteLine("Phew! {0} was that tough?",player1.GetPlayerName());
+           
             Console.WriteLine("Well lets continue! Where do you want to go next? \n");
 
             Console.WriteLine("1) Shop");
@@ -65,7 +66,7 @@ namespace QonquestOfVikings
             }
             else if (choice == "4")
             {
-                Battle();
+                battleBandit();
             }
 
 
@@ -100,7 +101,7 @@ namespace QonquestOfVikings
                 Console.WriteLine("\n  As you look behind the trees you see a small goblin running at you. He is ready to fight!");  // niet te ver van de town dus kan terug rennen en om guard's hulp vragen
                 Thread.Sleep(3500);
                 Console.Clear();
-                Battle();
+                battleGoblin();
             }
             else if (choice == "2")
             {
@@ -116,7 +117,7 @@ namespace QonquestOfVikings
                     "\n attacked by a bandit.");
                 Thread.Sleep(3500);
                 Console.Clear();
-                Battle();
+                battleBandit();
             }
                
                
@@ -124,9 +125,13 @@ namespace QonquestOfVikings
 
         }
 
-        public void Battle()
+        public void battleBandit()
         {
-            battle.battle();
+            battle.battleBandit();
+        }
+        public void battleGoblin()
+        {
+            battle.battleGoblin();
         }
         
     }
