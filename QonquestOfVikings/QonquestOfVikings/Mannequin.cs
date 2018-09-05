@@ -18,7 +18,6 @@ namespace QonquestOfVikings
         private int mana;
         private int maxMana;
         private bool isPlayer;
-        private string inventory;
         protected Attacks.Main attack1;
         protected Attacks.Main attack2;
         protected Attacks.Main attack3;
