@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arena.cs" />
     <Compile Include="Army.cs" />
     <Compile Include="Attacks\Heal.cs" />
     <Compile Include="Attacks\Kick.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Attacks\Slash.cs" />
     <Compile Include="Battle.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Inventory.cs" />
     <Compile Include="Mannequin.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
