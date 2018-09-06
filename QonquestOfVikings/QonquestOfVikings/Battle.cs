@@ -14,6 +14,8 @@ namespace QonquestOfVikings
         Enemy bandit;
         Goblin goblin;
         SavegameManager savegame;
+        Sound sound = new Sound();
+        
         public Battle(Player player)
         {
             this.player1 = player;
@@ -151,6 +153,7 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
+                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
 
                 Console.WriteLine("\n Do you want to continue?");
                 Console.WriteLine("(y/n)");
@@ -181,7 +184,6 @@ namespace QonquestOfVikings
         }
         public void battleGoblin()
         {
-            Sound sound = new Sound();
             StoryLine middle = new StoryLine(player1);
             sound.BattleBackground();
             Console.WriteLine("\n {0} got suddenly attacked!", player1.GetPlayerName());
@@ -192,12 +194,12 @@ namespace QonquestOfVikings
             int plydamage;
             int enmdamage;
 
-            //GenerateGoblin();
+            GenerateGoblin();
             do
             {
                 
                 Console.WriteLine("\n {0} (Level: {1}) has: {2} HP - {3} MP", player1.GetPlayerName(), player1.GetLevel(), player1.GetHealth(), player1.GetMana());
-                Console.WriteLine("\n The Goblin (Level: {0}) has: {1} HP - {2} MP", bandit.GetLevel(), bandit.GetHealth(), bandit.GetMana());
+                Console.WriteLine("\n The Goblin (Level: {0}) has: {1} HP - {2} MP", goblin.GetLevel(), goblin.GetHealth(), goblin.GetMana());
                 Console.WriteLine("\n");
                 Console.WriteLine("Choose an attack:");
                 Console.WriteLine("1. " + player1.GetAttack1().GetAttackName());
@@ -209,14 +211,14 @@ namespace QonquestOfVikings
                 Int32.TryParse(choise, out plyattack);
 
                 plydamage = player1.Attacks(plyattack, player1);
-                bandit.Damage(plydamage);
+                goblin.Damage(plydamage);
 
-                if (bandit.GetHealth() <= 0)
+                if (goblin.GetHealth() <= 0)
                 {
                     break;
                 }
 
-                enmdamage = bandit.GetAttack();
+                enmdamage = goblin.GetAttack();
                 player1.Damage(enmdamage);
                 
 
@@ -229,17 +231,18 @@ namespace QonquestOfVikings
                 Thread.Sleep(1200);
                 Console.Clear();
 
-            } while (!(bandit.GetHealth() <= 0));
+            } while (!(goblin.GetHealth() <= 0));
             sound.StoryBackground();
-            if (bandit.GetHealth() <= 0)
+            if (goblin.GetHealth() <= 0)
             {
                 
                 Random rnd = new Random();
-                Console.WriteLine("The bandit died yay! C:");
+                Console.WriteLine("The Goblin died yay! C:");
                 player1.GainExp(rnd.Next(10, 70));
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
+                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
 
                 Console.WriteLine("\n Do you want to play again?");
                 Console.WriteLine("(y/n)");
@@ -323,7 +326,7 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-
+                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
                 Console.WriteLine("\n Do you want to play again?");
                 Console.WriteLine("(y/n)");
                 string answer = Console.ReadLine();
