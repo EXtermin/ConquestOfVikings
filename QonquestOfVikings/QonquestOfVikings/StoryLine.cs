@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QonquestOfVikings
 {
-    
+
 
     class StoryLine
     {
@@ -17,7 +17,7 @@ namespace QonquestOfVikings
         {
             this.player1 = player;
             this.battle = new Battle(player1);
-           
+
         }
 
         public void Begin()
@@ -39,11 +39,11 @@ namespace QonquestOfVikings
             Console.Clear();
 
             battleBandit();
-            
+
         }
         public void Middle()
         {
-           
+
             Console.WriteLine("Well lets continue! Where do you want to go next? \n");
 
             Console.WriteLine("1) Shop");
@@ -52,13 +52,13 @@ namespace QonquestOfVikings
             Console.WriteLine("4) Battle again");
 
             string choice = Console.ReadLine();
-            if(choice == "1")
+            if (choice == "1")
             {
-
+                townShop();
             }
             else if (choice == "2")
             {
-
+                townArena();
             }
             else if (choice == "3")
             {
@@ -72,18 +72,41 @@ namespace QonquestOfVikings
 
         }
 
+        public void townArena()
+        {
+            Console.Clear();
+            Console.WriteLine("\n You decide you want train yourself for battle and head to the arena.");
+            Thread.Sleep(2500);
+            battle.battleBandit();
+            //bandit moet goblin zijn
+
+        }
+
+        public void townShop()
+        {
+            Console.Clear();
+            Console.WriteLine("\n You walk through the small town looking for the shop.");
+            Thread.Sleep(2500);
+            Console.WriteLine("\n You look up and see a big sign with 'SHOP' written on it.");
+            Thread.Sleep(2500);
+            Console.WriteLine("\n As you enter you are greedy by the shop keep.");
+
+        }
+            
+
         public void EndBeginning()
         {
             Console.Clear();
             Console.WriteLine("\n As you walk out of town you are greeded by the town's guard. ");
             Thread.Sleep(2000);
-            Console.WriteLine("\n You've known him for most of your life now. He was like the father you never had.");
+            Console.WriteLine("\n You've known him for most of your life now.");
             Thread.Sleep(2000);
             Console.WriteLine("\n Growing up alone wasn't easy for you but he always helped you along your way. His name was Asgier.");
             Thread.Sleep(2000);
             Console.WriteLine("\n As you walk by Asgier, you both node and you dissapear onto a path. You take the path north through a gaint forest.");
             Thread.Sleep(2000);
             Console.WriteLine("\n While you are going deeper into the forest you start hearing noises behind the tree's. \n \n ");
+
             Console.WriteLine("1) Look behind tree's");
             Console.WriteLine("2) Keep walking");
             string choice = Console.ReadLine();
@@ -112,11 +135,10 @@ namespace QonquestOfVikings
                 Console.Clear();
                 battleBandit();
             }
-               
-               
-            
+
 
         }
+
 
         public void battleBandit()
         {
