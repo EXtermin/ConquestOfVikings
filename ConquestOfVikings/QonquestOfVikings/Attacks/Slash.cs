@@ -8,7 +8,7 @@ namespace QonquestOfVikings.Attacks
 {
     class Slash : Main
     {
-        public Slash() : base("Slash", 2, 15, 0, false)
+        public Slash() : base("Slash", 2, 25, 0, false)
         {
 
         }

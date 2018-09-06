@@ -8,7 +8,7 @@ namespace QonquestOfVikings.Attacks
 {
     class Kick : Main
     {
-        public Kick() : base("Kick", 5, 25, 5, false)
+        public Kick() : base("Kick", 10, 35, 5, false)
         {
 
         }
