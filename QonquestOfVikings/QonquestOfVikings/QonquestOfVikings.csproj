@@ -51,6 +51,7 @@
     <Compile Include="Attacks\Slash.cs" />
     <Compile Include="Battle.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="FollowUpStoryline.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="Intro.cs" />
     <Compile Include="Inventory.cs" />

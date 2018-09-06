@@ -12,8 +12,9 @@ namespace QonquestOfVikings
     {
         public void loadIntro()
         {
+            Console.Clear();
             Console.WriteLine("");
-
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(@" _____                  _____                      _  _____ _             _ _            ");
             Console.WriteLine(@" |_   _|                / ____|                    | |/ ____| |           | (_)           ");
             Console.WriteLine(@"   | |  _ __ ___  _ __ | (_____      _____  _ __ __| | (___ | |_ _   _  __| |_  ___  ___  ");
@@ -28,9 +29,9 @@ namespace QonquestOfVikings
             Console.WriteLine(@" |  ___| '__/ _ / __|/ _ | '_ \| __/ __| ");
             Console.WriteLine(@" | |   | | |  __\__ |  __| | | | |_\__ \ ");
             Console.WriteLine(@" |_|   |_|  \___|___/\___|_| |_|\__|___/ ");
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
             Console.Clear();
-            SwitchIntro();
+            //SwitchIntro();
             Console.Clear();
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -40,16 +41,26 @@ namespace QonquestOfVikings
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("         ▄████▄   ▒█████   ███▄    █   █████   █    ██ ▓█████   ██████ ▄▄▄█████▓    ▒█████    █████▒    ██▒   █▓ ██▓ ██ ▄█▀ ██▓ ███▄    █   ▄████   ██████  ");
+            Thread.Sleep(500);
             Console.WriteLine("        ▒██▀ ▀█  ▒██▒  ██▒ ██ ▀█   █ ▒██▓  ██▒ ██  ▓██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒   ▒██▒  ██▒▓██   ▒    ▓██░   █▒▓██▒ ██▄█▒ ▓██▒ ██ ▀█   █  ██▒ ▀█▒▒██    ▒  ");
+            Thread.Sleep(500);
             Console.WriteLine("        ▒▓█    ▄ ▒██░  ██▒▓██  ▀█ ██▒▒██▒  ██░▓██  ▒██░▒███   ░ ▓██▄   ▒ ▓██░ ▒░   ▒██░  ██▒▒████ ░     ▓██  █▒░▒██▒▓███▄░ ▒██▒▓██  ▀█ ██▒▒██░▄▄▄░░ ▓██▄    ");
+            Thread.Sleep(500);
             Console.WriteLine("        ▒▓▓▄ ▄██▒▒██   ██░▓██▒  ▐▌██▒░██  █▀ ░▓▓█  ░██░▒▓█  ▄   ▒   ██▒░ ▓██▓ ░    ▒██   ██░░▓█▒  ░      ▒██ █░░░██░▓██ █▄ ░██░▓██▒  ▐▌██▒░▓█  ██▓  ▒   ██▒ ");
+            Thread.Sleep(500);
             Console.WriteLine("        ▒ ▓███▀ ░░ ████▓▒░▒██░   ▓██░░▒███▒█▄ ▒▒█████▓ ░▒████▒▒██████▒▒  ▒██▒ ░    ░ ████▓▒░░▒█░          ▒▀█░  ░██░▒██▒ █▄░██░▒██░   ▓██░░▒▓███▀▒▒██████▒▒ ");
+            Thread.Sleep(500);
             Console.WriteLine("        ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒▒░ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░      ░ ▒░▒░▒░  ▒ ░          ░ ▐░  ░▓  ▒ ▒▒ ▓▒░▓  ░ ▒░   ▒ ▒  ░▒   ▒ ▒ ▒▓▒ ▒ ░ ");
+            Thread.Sleep(500);
             Console.WriteLine("        ░  ▒     ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ▒░  ░ ░░▒░ ░ ░  ░ ░  ░░ ░▒  ░ ░    ░         ░ ▒ ▒░  ░            ░ ░░   ▒ ░░ ░▒ ▒░ ▒ ░░ ░░   ░ ▒░  ░   ░ ░ ░▒  ░ ░   ");
+            Thread.Sleep(500);
             Console.WriteLine("        ░        ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░░░ ░ ░    ░   ░  ░  ░    ░         ░ ░ ░ ▒   ░ ░            ░░   ▒ ░░ ░░ ░  ▒ ░   ░   ░ ░ ░ ░   ░ ░  ░  ░   ");
+            Thread.Sleep(500);
             Console.WriteLine("        ░ ░          ░ ░           ░     ░       ░        ░  ░      ░                  ░ ░                   ░   ░  ░  ░    ░           ░       ░       ░   ");
+            Thread.Sleep(500);
             Console.WriteLine("        ░                                                                                                   ░                                               ");
             Console.WriteLine("\n \n");
+            Thread.Sleep(1500);
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
 
@@ -120,7 +131,7 @@ namespace QonquestOfVikings
             Console.WriteLine(@"  _| |_| | | (_) | | | |____) \ V  V | (_) | | | (_| |____) | |_| |_| | (_| | | (_) \__ \ ");
             Console.WriteLine(@" |_____|_|  \___/|_| |_|_____/ \_/\_/ \___/|_|  \__,_|_____/ \__|\__,_|\__,_|_|\___/|___/ ");
             Thread.Sleep(3000);
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
