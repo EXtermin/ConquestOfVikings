@@ -74,10 +74,11 @@ namespace QonquestOfVikings
 
         public void townArena()
         {
+            Arena arenaStart = new Arena();
             Console.Clear();
             Console.WriteLine("\n You decide you want train yourself for battle and head to the arena.");
             Thread.Sleep(2500);
-            battle.battleBandit();
+            arenaStart.arenaChoose();
             //bandit moet goblin zijn
 
         }
