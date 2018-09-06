@@ -18,7 +18,8 @@ namespace QonquestOfVikings
         }
         public void FollowUpBegin()
         {
-            
+            Console.WriteLine("\n You defeat the small goblin and decide to continue on your path");
+            Console.WriteLine(\"");
         }
          public void FollowUpMiddle()
         {
@@ -31,7 +32,7 @@ namespace QonquestOfVikings
         public void Battle()
         {
             //Deze kan verandert worden ivm andere vijanden
-            battle.battle();
+            battle.battleBandit();
         }
     }
 }
