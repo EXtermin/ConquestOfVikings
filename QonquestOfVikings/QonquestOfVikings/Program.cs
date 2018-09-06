@@ -39,14 +39,15 @@ namespace QonquestOfVikings
                     Console.Clear();
                     Console.WriteLine("Do you want to see the intro again?");
                     Console.WriteLine("(yes/no) (y/n)");
-                    string anwser = Console.ReadLine();
-                    if(answer == "y" || answer == "yes")
+                    string answer2 = Console.ReadLine();
+                    if(answer2 == "y" || answer2 == "yes")
                     {
                         welcome.loadIntro();
                         start.Middle();
                     }
-                    else
+                    else if (answer2 == "n" || answer2 == "no")
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         start.Middle();
 
                     }

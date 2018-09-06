@@ -31,7 +31,7 @@ namespace QonquestOfVikings
         public void Battle()
         {
             //Deze kan verandert worden ivm andere vijanden
-            battle.battle();
+            //battle.battle();
         }
     }
 }
