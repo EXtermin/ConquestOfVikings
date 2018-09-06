@@ -58,6 +58,11 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Sounds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sounds.resx</DependentUpon>
+    </Compile>
     <Compile Include="Shop.cs" />
     <Compile Include="SavegameManager.cs" />
     <Compile Include="Sound.cs" />
@@ -66,6 +71,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Sounds.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sounds.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\AttackSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\BackgroundBattleSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\BackgroundStorySound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\DefeatSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\HealSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\WinSound.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

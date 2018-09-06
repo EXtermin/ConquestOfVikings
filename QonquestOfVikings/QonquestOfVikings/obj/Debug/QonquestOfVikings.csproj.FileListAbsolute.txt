@@ -31,3 +31,5 @@ D:\Eigenprojecten\temp\EigenDing\QonquestOfVikings\QonquestOfVikings\obj\Debug\Q
 D:\Eigenprojecten\temp\EigenDing\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
 D:\Eigenprojecten\temp\EigenDing\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
 D:\Eigenprojecten\temp\EigenDing\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.Sounds.resources
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\QonquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.GenerateResource.cache

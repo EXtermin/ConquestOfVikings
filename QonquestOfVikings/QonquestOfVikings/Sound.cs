@@ -11,32 +11,32 @@ namespace QonquestOfVikings
     {
         public void Victory()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/WinSound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.WinSound);
             snd.Play();
         }
         public void Defeat()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/DefeatSound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.DefeatSound);
             snd.Play();
         }
         public void BattleBackground()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/BackgroundBattleSound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.BackgroundBattleSound);
             snd.PlayLooping();
         }
         public void StoryBackground()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/BackgroundStorySound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.BackgroundStorySound);
             snd.PlayLooping();
         }
         public void Hit()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/AttackSound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.AttackSound);
             snd.PlaySync();
         }
         public void Heal()
         {
-            SoundPlayer snd = new SoundPlayer(@"Sound/HealSound.wav");
+            SoundPlayer snd = new SoundPlayer(Properties.Sounds.HealSound);
             snd.PlaySync();
         }
     }
