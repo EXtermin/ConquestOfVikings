@@ -19,10 +19,8 @@ namespace QonquestOfVikings
             origWidth = Console.WindowWidth;
             origHeight = Console.WindowHeight;
             Sound sound = new Sound();
-            sound.Defeat();
             width = origWidth + 40;
             height = origHeight + 2;
-            Console.ReadKey();
             Console.SetWindowSize(width, height);
             if (File.Exists("Savegame.dat"))
             {

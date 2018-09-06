@@ -1,5 +1,4 @@
 D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csprojAssemblyReference.cache
-D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.Sounds.resources
 D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.GenerateResource.cache
 D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
 D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe.config
@@ -16,3 +15,4 @@ D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\D
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.GameSounds.resources

@@ -10,9 +10,12 @@ namespace QonquestOfVikings
 {
     class Intro
     {
+        Sound snd = new Sound();
+
         public void loadIntro()
         {
             Console.Clear();
+            snd.DeadChicken();
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(@" _____                  _____                      _  _____ _             _ _            ");
@@ -21,15 +24,20 @@ namespace QonquestOfVikings
             Console.WriteLine(@"   | | | '__/ _ \| '_ \ \___ \ \ /\ / / _ \| '__/ _` |\___ \| __| | | |/ _` | |/ _ \/ __| ");
             Console.WriteLine(@"  _| |_| | | (_) | | | |____) \ V  V | (_) | | | (_| |____) | |_| |_| | (_| | | (_) \__ \ ");
             Console.WriteLine(@" |_____|_|  \___/|_| |_|_____/ \_/\_/ \___/|_|  \__,_|_____/ \__|\__,_|\__,_|_|\___/|___/ ");
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
             Console.WriteLine("\n \n");
             Console.WriteLine(@"  _____                         _    ");
+            Thread.Sleep(500);
             Console.WriteLine(@" |  __ \                       | |    ");
+            Thread.Sleep(500);
             Console.WriteLine(@" | |__) _ __ ___ ___  ___ _ __ | |_ ___ ");
+            Thread.Sleep(500);
             Console.WriteLine(@" |  ___| '__/ _ / __|/ _ | '_ \| __/ __| ");
+            Thread.Sleep(500);
             Console.WriteLine(@" | |   | | |  __\__ |  __| | | | |_\__ \ ");
+            Thread.Sleep(500);
             Console.WriteLine(@" |_|   |_|  \___|___/\___|_| |_|\__|___/ ");
-            Thread.Sleep(3000);
+            Thread.Sleep(10000);
             Console.Clear();
             //SwitchIntro();
             Console.Clear();

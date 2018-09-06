@@ -77,6 +77,7 @@
     <Content Include="Sound\AttackSound.wav" />
     <Content Include="Sound\BackgroundBattleSound.wav" />
     <Content Include="Sound\BackgroundStorySound.wav" />
+    <None Include="Sound\DeadChicken.wav" />
     <Content Include="Sound\DefeatSound.wav" />
     <Content Include="Sound\HealSound.wav" />
     <Content Include="Sound\WinSound.wav" />
