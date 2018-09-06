@@ -18,11 +18,12 @@ namespace QonquestOfVikings
             int origHeight, height;
             origWidth = Console.WindowWidth;
             origHeight = Console.WindowHeight;
+            Sound sound = new Sound();
+            sound.Defeat();
             width = origWidth + 40;
             height = origHeight + 2;
+            Console.ReadKey();
             Console.SetWindowSize(width, height);
-            Console.WriteLine("W:{0} ---- H:{1}",Console.WindowWidth, Console.WindowHeight);
-            
             if (File.Exists("Savegame.dat"))
             {
                 Console.WriteLine("Want to continue your last adventure?");
@@ -30,7 +31,7 @@ namespace QonquestOfVikings
                 string answer = Console.ReadLine();
                 if (answer == "y" || answer == "yes")
                 {
-                    Sound sound = new Sound();
+                    
                     sound.StoryBackground();
                     Player player1 = new Player("test");
                     SavegameManager load = new SavegameManager();
