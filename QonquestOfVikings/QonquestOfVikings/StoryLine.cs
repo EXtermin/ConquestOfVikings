@@ -74,7 +74,7 @@ namespace QonquestOfVikings
 
         public void townArena()
         {
-            Arena arenaStart = new Arena();
+            Arena arenaStart = new Arena(player1);
             Console.Clear();
             Console.WriteLine("\n You decide you want train yourself for battle and head to the arena.");
             Thread.Sleep(2500);
