@@ -161,6 +161,8 @@ namespace QonquestOfVikings
                     player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
+                    Console.WriteLine("You started walking back to town...");
+                    Thread.Sleep(2000);
                     middle.Middle();
 
                 }

@@ -43,9 +43,8 @@ namespace QonquestOfVikings
         }
         public void Middle()
         {
-
-            Console.WriteLine("Well lets continue! Where do you want to go next? \n");
-
+            Console.Clear();
+            Console.WriteLine("Where do you want to go next? \n");
             Console.WriteLine("1) Shop");
             Console.WriteLine("2) Arena");
             Console.WriteLine("3) Exit town");
@@ -76,10 +75,9 @@ namespace QonquestOfVikings
         {
             Arena arenaStart = new Arena(player1);
             Console.Clear();
-            Console.WriteLine("\n You decide you want train yourself for battle and head to the arena.");
+            Console.WriteLine("\n You decide you want train yourself for battle and went to the arena.");
             Thread.Sleep(2500);
             arenaStart.arenaChoose();
-            //bandit moet goblin zijn
 
         }
 
@@ -90,7 +88,7 @@ namespace QonquestOfVikings
             Thread.Sleep(2500);
             Console.WriteLine("\n You look up and see a big sign with 'SHOP' written on it.");
             Thread.Sleep(2500);
-            Console.WriteLine("\n As you enter you are greedy by the shop keep.");
+            Console.WriteLine("\n As you enter you are welcomed by the shop keeper.");
 
         }
             
@@ -104,12 +102,12 @@ namespace QonquestOfVikings
             Thread.Sleep(2000);
             Console.WriteLine("\n Growing up alone wasn't easy for you but he always helped you along your way. His name was Asgier.");
             Thread.Sleep(2000);
-            Console.WriteLine("\n As you walk by Asgier, you both node and you dissapear onto a path. You take the path north through a gaint forest.");
+            Console.WriteLine("\n As you walk by Asgier, you both node and you dissapear onto a path. You take the path north through a giant forest.");
             Thread.Sleep(2000);
             Console.WriteLine("\n While you are going deeper into the forest you start hearing noises behind the tree's. \n \n ");
 
-            Console.WriteLine("1) Look behind tree's");
-            Console.WriteLine("2) Keep walking");
+            Console.WriteLine("1) Look behind the tree's");
+            Console.WriteLine("2) Keep on walking");
             string choice = Console.ReadLine();
             if (choice == "1")
             {
@@ -126,12 +124,13 @@ namespace QonquestOfVikings
                 Thread.Sleep(2000);
                 Console.WriteLine("\n  You shake the thought and continue walking. As you start to stop hearing the noises you step in something.\n");
                 Thread.Sleep(2000);
-                Console.WriteLine(" ....");
+                Console.WriteLine("\n ....");
                 Thread.Sleep(2000);
-                Console.WriteLine(" ....");
+                Console.WriteLine("\n ....");
                 Thread.Sleep(2000);
-                Console.WriteLine("\n It's a trap! your foot is stuck in a bear trap but its to weak to hurt you. As you look around you get " +
-                    "\n attacked by a bandit.");
+                Console.WriteLine("\n It's a trap! your foot is stuck in a bear trap but its to weak to hurt you. ");
+                Thread.Sleep(2000);
+                Console.WriteLine("As you look around you get attacked by a bandit!");
                 Thread.Sleep(3500);
                 Console.Clear();
                 battleBandit();
