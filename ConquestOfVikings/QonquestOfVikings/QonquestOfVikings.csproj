@@ -43,11 +43,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arena.cs" />
+    <Compile Include="Army.cs" />
+    <Compile Include="Attacks\Heal.cs" />
+    <Compile Include="Attacks\Kick.cs" />
+    <Compile Include="Attacks\Main.cs" />
+    <Compile Include="Attacks\Slash.cs" />
+    <Compile Include="Battle.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="FollowUpStoryline.cs" />
+    <Compile Include="Goblin.cs" />
+    <Compile Include="Intro.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Mannequin.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Sounds.Designer.cs" />
+    <Compile Include="SavegameManager.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="StoryLine.cs" />
+    <Compile Include="Utils\ConsoleControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Sounds.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sound\AttackSound.wav" />
+    <Content Include="Sound\BackgroundBattleSound.wav" />
+    <Content Include="Sound\BackgroundStorySound.wav" />
+    <Content Include="Sound\DefeatSound.wav" />
+    <Content Include="Sound\HealSound.wav" />
+    <Content Include="Sound\WinSound.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
