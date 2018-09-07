@@ -10,7 +10,6 @@ D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\D
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.pdb
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csprojAssemblyReference.cache
-D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.Sounds.resources
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.GenerateResource.cache
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.CoreCompileInputs.cache
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
