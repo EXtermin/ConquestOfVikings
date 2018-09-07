@@ -323,10 +323,12 @@ namespace QonquestOfVikings
                 Random rnd = new Random();
                 Console.WriteLine("The Goblin died yay! C:");
                 player1.GainExp(rnd.Next(10, 70));
+                player1.SetGold(rnd.Next(9,18));
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
+                Console.WriteLine("Your current amount of Gold is: {0} <-- not yet implemented", player1.GetGold());
+                Console.WriteLine("Current items in your inventory:");
                 Console.WriteLine("\n Do you want to play again?");
                 Console.WriteLine("(y/n)");
                 string answer = Console.ReadLine();
@@ -413,24 +415,11 @@ namespace QonquestOfVikings
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
                 Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
 
-                Console.WriteLine("\n Do you want to play again?");
-                Console.WriteLine("(y/n)");
-                string answer = Console.ReadLine();
-
-                if (answer == "y" || answer == "yes")
-                {
                     player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
                     begin.FollowUpBegin();
 
-                }
-                else
-                {
-                    player1.Regen();
-                    savegame.save(player1);
-                    Console.WriteLine("\n \n oh... thats fine! have an awesome day! bai!");
-                }
             }
             else
             {

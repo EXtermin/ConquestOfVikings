@@ -16,13 +16,16 @@ namespace QonquestOfVikings
         private float baseDamage;
         private int healPower;
         private int mana;
+        private int gold;
         private int maxMana;
         private bool isPlayer;
         protected Attacks.Main attack1;
         protected Attacks.Main attack2;
         protected Attacks.Main attack3;
+        public string[] inventory = new string[8];
+        
 
-        protected Mannequin(int health, int level, float baseDamage, int mana, bool isPlayer, int exp = 0)
+        protected Mannequin(int health, int level, float baseDamage, int mana, bool isPlayer, int exp = 0, int gold = 0)
         {
             this.health = health;
             this.level = level;
@@ -33,6 +36,7 @@ namespace QonquestOfVikings
             this.isPlayer = isPlayer;
             this.maxHealth = this.health;
             this.maxMana = this.mana;
+            this.gold = this.gold;
             this.attack1 = new Attacks.Slash();
             this.attack2 = new Attacks.Kick();
             this.attack3 = new Attacks.Heal();
@@ -188,6 +192,33 @@ namespace QonquestOfVikings
         protected void SetHealPower(int healPower)
         {
             this.healPower = healPower;
+        }
+        public int GetGold()
+        {
+            return this.gold;
+        }
+        public void SetGold(int gold)
+        {
+            this.gold += gold;
+        }
+        public void SetInventory(string item)
+        {
+
+            if (inventory.Contains(item))
+            {
+                Console.WriteLine("You already bought this item!");
+            }
+            else
+            {
+                if (item == "health potion")
+                {
+                    this.inventory[0] = item;
+                }
+            }
+        }
+        public string[] GetInventory()
+        {
+            return this.inventory;
         }
     }
 }

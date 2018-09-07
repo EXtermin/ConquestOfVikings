@@ -16,3 +16,4 @@ D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\D
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
 D:\Documenten\GitHub\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.GameSounds.resources
+D:\wamp64\www\EigenProjecten\VikingGame\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.Properties.GameSounds.resources

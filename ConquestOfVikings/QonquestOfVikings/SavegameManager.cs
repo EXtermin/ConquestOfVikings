@@ -24,6 +24,7 @@ namespace QonquestOfVikings
                 file.WriteLine(player.GetMaxHealth());
                 file.WriteLine(player.GetMana());
                 file.WriteLine(player.GetMaxMana());
+                file.WriteLine(player.GetGold());
                 //string[] temp = player.GetInventory();
                 //for (int i = 0; i < temp.Length; i++)
                 //{
@@ -49,6 +50,7 @@ namespace QonquestOfVikings
                 int maxhealth;
                 int mana;
                 int maxmana;
+                int gold;
                 string playerName = arrLines[0];
 
                 Int32.TryParse(arrLines[1], out level);
@@ -59,8 +61,9 @@ namespace QonquestOfVikings
                 Int32.TryParse(arrLines[6], out maxhealth);
                 Int32.TryParse(arrLines[7], out mana);
                 Int32.TryParse(arrLines[8], out maxmana);
+                Int32.TryParse(arrLines[9], out gold);
 
-                player1.LoadStats(playerName, level, exp, basedmg, healpower, health, maxhealth, mana, maxmana);
+                player1.LoadStats(playerName, level, exp, basedmg, healpower, health, maxhealth, mana, maxmana, gold);
             }
         }
     }
