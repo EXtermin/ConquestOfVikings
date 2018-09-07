@@ -90,8 +90,65 @@ namespace QonquestOfVikings
             Thread.Sleep(2500);
             Console.WriteLine("\n As you enter you are welcomed by the shop keeper.");
 
-        }
-            
+            Console.WriteLine("\n1) Lesser MP Potion    (030g)");
+            Console.WriteLine("2) MP Potion             (050g)");
+            Console.WriteLine("3) Lesser Healt Potion   (020g)");
+            Console.WriteLine("4) Healt Potion          (027g)");
+            Console.WriteLine("5) Leather Armor         (035g)");
+            Console.WriteLine("6) Chain Armor           (100g)");
+            Console.WriteLine("7) Iron Axe              (087g)");
+            Console.WriteLine("8) Torch                 (070g)");
+
+            string choice = Console.ReadLine();
+            if (choice == "1")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the lesser MP potion");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "2")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the MP potion.");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "3")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the lesser healt potion");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "4")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the healt potion.");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "5")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the leather armor.");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "6")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the chain armor.");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "7")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the iron axe.");
+                Thread.Sleep(2000);
+            }
+            else if (choice == "8")
+            {
+                Console.Clear();
+                Console.WriteLine("\n You decide to buy the torch.");
+                Thread.Sleep(2000);
+            }
+        }   
 
         public void EndBeginning()
         {
@@ -116,7 +173,7 @@ namespace QonquestOfVikings
                 Console.WriteLine("\n  As you look behind the trees you see a small goblin running at you. He is ready to fight!");  // niet te ver van de town dus kan terug rennen en om guard's hulp vragen
                 Thread.Sleep(3500);
                 Console.Clear();
-                battleGoblin();
+                battle.battleGoblinForest();
             }
             else if (choice == "2")
             {

@@ -29,14 +29,9 @@ namespace QonquestOfVikings
             Console.WriteLine("\n When you try to look inside of the cave you make out a weird black figure.");
             Thread.Sleep(2500);
 
-
-            Console.Clear();
-            Console.WriteLine("What should I do? \n");
-            Thread.Sleep(2500);
+            Console.WriteLine("\n What should I do? \n");
             Console.WriteLine("1) Head back to town. It doesn't look safe!");
-            Thread.Sleep(2500);
             Console.WriteLine("2) Enter the cave. I can take it!");
-            Thread.Sleep(2500);
 
             string choice = Console.ReadLine();
             if (choice == "1")
@@ -62,16 +57,17 @@ namespace QonquestOfVikings
 
         public void enterCave()
         {
+            Console.Clear();
             Console.WriteLine("\n You enter the cave and try to slash the black figure.");
             Thread.Sleep(2500);
             Console.WriteLine("\n But suprisingly you don't seem to hit anything.");
             Thread.Sleep(2500);
             Console.WriteLine("\n You try to follow the figure deeper into the cave ");
             Thread.Sleep(2500);
-            Console.WriteLine("\n but you finf hard to see without a light.");
+            Console.WriteLine("\n but you find hard to see without a light.");
             Thread.Sleep(2500);
             Console.WriteLine("\n You try to run at the figure but suddenly you feel like your falling.");
-            Thread.Sleep(2500);
+            Thread.Sleep(4000);
 
             Intro defeat = new Intro();
             defeat.Exit();
