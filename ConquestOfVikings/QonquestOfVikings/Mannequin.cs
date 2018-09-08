@@ -131,7 +131,7 @@ namespace QonquestOfVikings
             return this.health;
         }
 
-        protected void SetHealth(int health)
+        public void SetHealth(int health)
         {
             this.health = health;
         }
@@ -141,7 +141,7 @@ namespace QonquestOfVikings
             return this.maxHealth;
         }
 
-        protected void SetMaxHealth(int maxHealth)
+        public void SetMaxHealth(int maxHealth)
         {
             this.maxHealth = maxHealth;
         }
@@ -210,9 +210,37 @@ namespace QonquestOfVikings
             }
             else
             {
-                if (item == "health potion")
+                if (item == "Lesser MP Potion")
                 {
                     this.inventory[0] = item;
+                }
+                else if (item == "Greater MP Potion")
+                {
+                    this.inventory[1] = item;
+                }
+                else if (item == "Lesser Healt Potion")
+                {
+                    this.inventory[2] = item;
+                }
+                else if (item == "Greater Health Potion")
+                {
+                    this.inventory[3] = item;
+                }
+                else if (item == "Leather Armor")
+                {
+                    this.inventory[4] = item;
+                }
+                else if (item == "Chain Armor")
+                {
+                    this.inventory[5] = item;
+                }
+                else if (item == "Iron Axe")
+                {
+                    this.inventory[6] = item;
+                }
+                else if (item == "Torch")
+                {
+                    this.inventory[7] = item;
                 }
             }
         }
