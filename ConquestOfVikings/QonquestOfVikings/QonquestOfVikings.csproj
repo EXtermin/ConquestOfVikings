@@ -55,6 +55,7 @@
     <Compile Include="Goblin.cs" />
     <Compile Include="Intro.cs" />
     <Compile Include="Mannequin.cs" />
+    <Compile Include="Murloc.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
