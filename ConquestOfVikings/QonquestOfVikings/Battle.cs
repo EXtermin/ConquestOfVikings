@@ -153,7 +153,7 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
+                Console.WriteLine("Your current amount of Gold is: {0}", player1.GetGold());
 
                 Console.WriteLine("\n Do you want to continue?");
                 Console.WriteLine("(y/n)");
@@ -242,7 +242,7 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
+                Console.WriteLine("Your current amount of Gold is: {0}", player1.GetGold());
 
                 Console.WriteLine("\n Do you want to play again?");
                 Console.WriteLine("(y/n)");
@@ -327,7 +327,7 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-                Console.WriteLine("Your current amount of Gold is: {0} <-- not yet implemented", player1.GetGold());
+                Console.WriteLine("Your current amount of Gold is: {0}", player1.GetGold());
                 Console.WriteLine("Current items in your inventory:");
                 Console.WriteLine("\n Do you want to play again?");
                 Console.WriteLine("(y/n)");
@@ -413,9 +413,9 @@ namespace QonquestOfVikings
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
-                Console.WriteLine("Your current amount of Gold is: {} <-- not yet implemented");
+                Console.WriteLine("Your current amount of Gold is: {0}", player1.GetGold());
 
-                    player1.Regen();
+                player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
                     begin.FollowUpBegin();

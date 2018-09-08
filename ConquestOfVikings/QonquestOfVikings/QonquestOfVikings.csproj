@@ -54,7 +54,6 @@
     <Compile Include="FollowUpStoryline.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="Intro.cs" />
-    <Compile Include="Inventory.cs" />
     <Compile Include="Mannequin.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />

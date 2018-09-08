@@ -90,13 +90,13 @@ namespace QonquestOfVikings
             Thread.Sleep(2500);
             Console.WriteLine("\n As you enter you are welcomed by the shop keeper.");
 
-            Console.WriteLine("\n1) Lesser MP Potion    (030g)");
+            Console.WriteLine("\n1) Lesser MP Potion      (030g)");
             Console.WriteLine("2) MP Potion             (050g)");
             Console.WriteLine("3) Lesser Healt Potion   (020g)");
             Console.WriteLine("4) Healt Potion          (027g)");
-            Console.WriteLine("5) Leather Armor         (035g)");
-            Console.WriteLine("6) Chain Armor           (100g)");
-            Console.WriteLine("7) Iron Axe              (087g)");
+            Console.WriteLine("5) Leather Armor         (175g)");
+            Console.WriteLine("6) Chain Armor           (275g)");
+            Console.WriteLine("7) Iron Axe              (125g)");
             Console.WriteLine("8) Torch                 (070g)");
 
             string choice = Console.ReadLine();
