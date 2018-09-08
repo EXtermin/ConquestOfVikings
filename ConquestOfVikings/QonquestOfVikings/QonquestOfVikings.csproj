@@ -54,6 +54,10 @@
     <Compile Include="FollowUpStoryline.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="Intro.cs" />
+    <Compile Include="Items\Armor.cs" />
+    <Compile Include="Items\HealthPotion.cs" />
+    <Compile Include="Items\ManaPotion.cs" />
+    <Compile Include="Items\Weapons.cs" />
     <Compile Include="Mannequin.cs" />
     <Compile Include="Murloc.cs" />
     <Compile Include="Player.cs" />
