@@ -30,6 +30,11 @@
         {
             this.picEnemy = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAttack1 = new System.Windows.Forms.Button();
+            this.btnAttack2 = new System.Windows.Forms.Button();
+            this.btnHeal = new System.Windows.Forms.Button();
+            this.HealthBarPlayer = new System.Windows.Forms.ProgressBar();
+            this.HealthBarEnemy = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,11 +59,57 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAttack1
+            // 
+            this.btnAttack1.Location = new System.Drawing.Point(530, 516);
+            this.btnAttack1.Name = "btnAttack1";
+            this.btnAttack1.Size = new System.Drawing.Size(75, 23);
+            this.btnAttack1.TabIndex = 2;
+            this.btnAttack1.Text = "Slash";
+            this.btnAttack1.UseVisualStyleBackColor = true;
+            // 
+            // btnAttack2
+            // 
+            this.btnAttack2.Location = new System.Drawing.Point(611, 516);
+            this.btnAttack2.Name = "btnAttack2";
+            this.btnAttack2.Size = new System.Drawing.Size(75, 23);
+            this.btnAttack2.TabIndex = 3;
+            this.btnAttack2.Text = "Kick";
+            this.btnAttack2.UseVisualStyleBackColor = true;
+            // 
+            // btnHeal
+            // 
+            this.btnHeal.Location = new System.Drawing.Point(692, 516);
+            this.btnHeal.Name = "btnHeal";
+            this.btnHeal.Size = new System.Drawing.Size(75, 23);
+            this.btnHeal.TabIndex = 4;
+            this.btnHeal.Text = "Heal";
+            this.btnHeal.UseVisualStyleBackColor = true;
+            // 
+            // HealthBarPlayer
+            // 
+            this.HealthBarPlayer.Location = new System.Drawing.Point(537, 133);
+            this.HealthBarPlayer.Name = "HealthBarPlayer";
+            this.HealthBarPlayer.Size = new System.Drawing.Size(133, 23);
+            this.HealthBarPlayer.TabIndex = 5;
+            // 
+            // HealthBarEnemy
+            // 
+            this.HealthBarEnemy.Location = new System.Drawing.Point(12, 145);
+            this.HealthBarEnemy.Name = "HealthBarEnemy";
+            this.HealthBarEnemy.Size = new System.Drawing.Size(133, 23);
+            this.HealthBarEnemy.TabIndex = 6;
+            // 
             // BattleScreen
             // 
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(722, 539);
+            this.ClientSize = new System.Drawing.Size(779, 551);
             this.ControlBox = false;
+            this.Controls.Add(this.HealthBarEnemy);
+            this.Controls.Add(this.HealthBarPlayer);
+            this.Controls.Add(this.btnHeal);
+            this.Controls.Add(this.btnAttack2);
+            this.Controls.Add(this.btnAttack1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picEnemy);
             this.MaximizeBox = false;
@@ -76,5 +127,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox picEnemy;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAttack1;
+        private System.Windows.Forms.Button btnAttack2;
+        private System.Windows.Forms.Button btnHeal;
+        private System.Windows.Forms.ProgressBar HealthBarPlayer;
+        private System.Windows.Forms.ProgressBar HealthBarEnemy;
     }
 }

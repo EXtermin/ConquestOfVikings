@@ -58,6 +58,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Attacks\Heal.cs" />
+    <Compile Include="Models\Attacks\Kick.cs" />
+    <Compile Include="Models\Attacks\Main.cs" />
+    <Compile Include="Models\Attacks\Slash.cs" />
+    <Compile Include="Models\Goblin.cs" />
+    <Compile Include="Models\Mannequin.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\SavegameManager.cs" />
+    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\Sound.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BattleScreen.resx">
@@ -66,6 +76,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\GameSounds.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +86,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\GameSounds.Designer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>

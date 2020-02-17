@@ -8,3 +8,4 @@ D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterfa
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.exe
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.pdb
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.BattleScreen.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Properties.GameSounds.resources
