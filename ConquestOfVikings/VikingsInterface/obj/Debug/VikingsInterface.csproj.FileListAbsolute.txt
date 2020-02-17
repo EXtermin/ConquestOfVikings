@@ -1,0 +1,9 @@
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\bin\Debug\VikingsInterface.exe.config
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\bin\Debug\VikingsInterface.exe
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\bin\Debug\VikingsInterface.pdb
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.csprojAssemblyReference.cache
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Form1.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Properties.Resources.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.csproj.GenerateResource.cache
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.exe
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.pdb
