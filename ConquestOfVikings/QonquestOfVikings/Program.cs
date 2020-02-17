@@ -42,12 +42,12 @@ namespace QonquestOfVikings
                     if(answer2 == "y" || answer2 == "yes")
                     {
                         welcome.loadIntro();
-                        start.Middle();
+                        start.MainTown();
                     }
                     else if (answer2 == "n" || answer2 == "no")
                     {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        start.Middle();
+                         Console.ForegroundColor = ConsoleColor.Cyan;
+                        start.MainTown();
 
                     }
                 }
