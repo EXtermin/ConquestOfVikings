@@ -91,7 +91,7 @@ namespace QonquestOfVikings
             }
         }
 
-        public void battleBandit()
+        public void BattleBandit()
         {
             Sound sound = new Sound();
             StoryLine middle = new StoryLine(player1);
@@ -166,7 +166,7 @@ namespace QonquestOfVikings
                     Console.Clear();
                     Console.WriteLine("You started walking back to town...");
                     Thread.Sleep(2000);
-                    middle.Middle();
+                    middle.MainTown();
 
                 }
                 else
@@ -174,6 +174,93 @@ namespace QonquestOfVikings
                     player1.Regen();
                     savegame.save(player1);
                     Console.WriteLine("\n \n oh... thats fine! have an awesome day! bai!");
+                }
+            }
+            else
+            {
+                sound.Defeat();
+                Console.WriteLine("oh nuuu you died at level {0}", player1.GetLevel());
+            }
+        }
+        
+        public void battleBanditArena()
+        {
+            Sound sound = new Sound();
+            StoryLine middle = new StoryLine(player1);
+            sound.BattleBackground();
+
+            int plyattack;
+            int plydamage;
+            int enmdamage;
+            GenerateBandit();
+            do
+            {
+
+                Console.WriteLine("\n {0} (Level: {1}) has: {2} HP - {3} MP", player1.GetPlayerName(), player1.GetLevel(), player1.GetHealth(), player1.GetMana());
+                Console.WriteLine("\n The Bandit (Level: {0}) has: {1} HP - {2} MP", bandit.GetLevel(), bandit.GetHealth(), bandit.GetMana());
+                Console.WriteLine("\n");
+                Console.WriteLine("Choose an attack:");
+                Console.WriteLine("1. " + player1.GetAttack1().GetAttackName());
+                Console.WriteLine("2. " + player1.GetAttack2().GetAttackName());
+                Console.WriteLine("3. " + player1.GetAttack3().GetAttackName());
+
+
+                string choise = Console.ReadLine();
+                Int32.TryParse(choise, out plyattack);
+
+                plydamage = player1.Attacks(plyattack, player1);
+                bandit.Damage(plydamage);
+
+                if (bandit.GetHealth() <= 0)
+                {
+                    break;
+                }
+
+                enmdamage = bandit.GetAttack();
+                player1.Damage(enmdamage);
+
+
+                Console.WriteLine("\n");
+                if (player1.GetHealth() <= 0)
+                {
+                    break;
+                }
+
+                Thread.Sleep(1200);
+                Console.Clear();
+
+            } while (!(bandit.GetHealth() <= 0));
+            sound.StoryBackground();
+            if (bandit.GetHealth() <= 0)
+            {
+
+                Random rnd = new Random();
+                Console.WriteLine("The Bandit died yay! C:");
+                player1.GainExp(rnd.Next(10, 70));
+                player1.SetGold(rnd.Next(9, 18));
+                player1.LevelUp();
+                Console.WriteLine("Your current level is: {0}", player1.GetLevel());
+                Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
+                Console.WriteLine("Your current amount of Gold is: {0}", player1.GetGold());
+                Console.WriteLine("Current items in your inventory:");
+                Console.WriteLine("\n Do you want to play again?");
+                Console.WriteLine("(y/n)");
+                string answer = Console.ReadLine();
+
+                if (answer == "y" || answer == "yes")
+                {
+                    player1.Regen();
+                    savegame.save(player1);
+                    Console.Clear();
+                    middle.townArena();
+
+                }
+                else
+                {
+                    player1.Regen();
+                    savegame.save(player1);
+                    //Console.WriteLine("\n \n oh... thats fine! have an awesome day! bai!");
+                    middle.MainTown();
                 }
             }
             else
@@ -253,7 +340,7 @@ namespace QonquestOfVikings
                     player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
-                    middle.Middle();
+                    middle.MainTown();
 
                 }
                 else
@@ -274,14 +361,14 @@ namespace QonquestOfVikings
             Sound sound = new Sound();
             StoryLine middle = new StoryLine(player1);
             sound.BattleBackground();
-            
+
             int plyattack;
             int plydamage;
             int enmdamage;
             GenerateGoblin();
             do
             {
-                
+
                 Console.WriteLine("\n {0} (Level: {1}) has: {2} HP - {3} MP", player1.GetPlayerName(), player1.GetLevel(), player1.GetHealth(), player1.GetMana());
                 Console.WriteLine("\n The Goblin (Level: {0}) has: {1} HP - {2} MP", goblin.GetLevel(), goblin.GetHealth(), goblin.GetMana());
                 Console.WriteLine("\n");
@@ -304,7 +391,7 @@ namespace QonquestOfVikings
 
                 enmdamage = goblin.GetAttack();
                 player1.Damage(enmdamage);
-                
+
 
                 Console.WriteLine("\n");
                 if (player1.GetHealth() <= 0)
@@ -319,11 +406,11 @@ namespace QonquestOfVikings
             sound.StoryBackground();
             if (goblin.GetHealth() <= 0)
             {
-                
+
                 Random rnd = new Random();
                 Console.WriteLine("The Goblin died yay! C:");
                 player1.GainExp(rnd.Next(10, 70));
-                player1.SetGold(rnd.Next(9,18));
+                player1.SetGold(rnd.Next(9, 18));
                 player1.LevelUp();
                 Console.WriteLine("Your current level is: {0}", player1.GetLevel());
                 Console.WriteLine("Your current EXP is: {0}/100 EXP", player1.GetExp());
@@ -338,14 +425,14 @@ namespace QonquestOfVikings
                     player1.Regen();
                     savegame.save(player1);
                     Console.Clear();
-                    middle.Middle();
+                    middle.townArena();
 
                 }
                 else
                 {
-                    player1.Regen();
+                    middle.MainTown();
                     savegame.save(player1);
-                    Console.WriteLine("\n \n oh... thats fine! have an awesome day! bai!");
+                    
                 }
             }
             else
@@ -427,6 +514,7 @@ namespace QonquestOfVikings
                 Console.WriteLine("oh nuuu you died at level {0}", player1.GetLevel());
             }
         }
+    
     }
 }
 
