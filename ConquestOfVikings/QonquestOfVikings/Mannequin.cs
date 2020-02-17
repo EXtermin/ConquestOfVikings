@@ -218,7 +218,7 @@ namespace QonquestOfVikings
                 {
                     this.inventory[1] = item;
                 }
-                else if (item == "Lesser Healt Potion")
+                else if (item == "Lesser Health Potion")
                 {
                     this.inventory[2] = item;
                 }

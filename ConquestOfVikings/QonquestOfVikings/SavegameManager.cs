@@ -25,11 +25,11 @@ namespace QonquestOfVikings
                 file.WriteLine(player.GetMana());
                 file.WriteLine(player.GetMaxMana());
                 file.WriteLine(player.GetGold());
-                //string[] temp = player.GetInventory();
-                //for (int i = 0; i < temp.Length; i++)
-                //{
-                //    file.WriteLine(temp[i]);
-                //}
+                string[] temp = player.GetInventory();
+                for (int i = 0; i < temp.Length; i++)
+                {
+                    file.WriteLine(temp[i]);
+                }
             }
         }
 

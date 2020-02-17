@@ -20,16 +20,16 @@ namespace QonquestOfVikings
         public void FollowUpBegin()
         {
             Console.Clear();
-            Console.WriteLine("\n You defeat the small goblin and decide to continue on your path.");
+            Console.WriteLine("\n You defeat the small goblin and decide to continue on your journey.");
             Thread.Sleep(2500);
-            Console.WriteLine("\n After walking for what seems like 30 minute's you find a enormous mountain. ");
+            Console.WriteLine("\n After walking for what seems like around 30 minute's you would find standing before you a enormous mountain. ");
             Thread.Sleep(2500);
-            Console.WriteLine("\n As you walk along side the mountain you find the entrance to a cave.");
+            Console.WriteLine("\n As you walk along side the mountain you find a entrance to a cave.");
             Thread.Sleep(2500);
             Console.WriteLine("\n When you try to look inside of the cave you make out a weird black figure.");
             Thread.Sleep(2500);
 
-            Console.WriteLine("\n What should I do? \n");
+            Console.WriteLine("\n What will you do? \n");
             Console.WriteLine("1) Head back to town. It doesn't look safe!");
             Console.WriteLine("2) Enter the cave. I can take it!");
 
@@ -48,11 +48,11 @@ namespace QonquestOfVikings
         public void backToTown()
         {
             Console.Clear();
-            Console.WriteLine("\n You decide to head back to town. It's to risky to enter without a light source");
+            Console.WriteLine("\n You decide to head back to town. It's too risky to enter without a light source");
             Thread.Sleep(2500);
 
             StoryLine backTown = new StoryLine(player1);
-            backTown.Middle();
+            backTown.MainTown();
         }
 
         public void enterCave()
@@ -66,7 +66,7 @@ namespace QonquestOfVikings
             Thread.Sleep(2500);
             Console.WriteLine("\n but you find hard to see without a light.");
             Thread.Sleep(2500);
-            Console.WriteLine("\n You try to run at the figure but suddenly you feel like your falling.");
+            Console.WriteLine("\n You try to run at the figure but suddenly you feel like you are falling.");
             Thread.Sleep(4000);
 
             Intro defeat = new Intro();
@@ -86,7 +86,7 @@ namespace QonquestOfVikings
         public void Battle()
         {
             //Deze kan verandert worden ivm andere vijanden
-            battle.battleBandit();
+            battle.BattleBandit();
         }
     }
 }
