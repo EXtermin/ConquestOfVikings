@@ -35,6 +35,10 @@
             this.btnHeal = new System.Windows.Forms.Button();
             this.HealthBarPlayer = new System.Windows.Forms.ProgressBar();
             this.HealthBarEnemy = new System.Windows.Forms.ProgressBar();
+            this.lblEnemy = new System.Windows.Forms.Label();
+            this.lblPlayer = new System.Windows.Forms.Label();
+            this.lblBattleP = new System.Windows.Forms.Label();
+            this.lblBattleE = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,27 +65,27 @@
             // 
             // btnAttack1
             // 
-            this.btnAttack1.Location = new System.Drawing.Point(530, 516);
+            this.btnAttack1.Location = new System.Drawing.Point(495, 459);
             this.btnAttack1.Name = "btnAttack1";
-            this.btnAttack1.Size = new System.Drawing.Size(75, 23);
+            this.btnAttack1.Size = new System.Drawing.Size(133, 80);
             this.btnAttack1.TabIndex = 2;
             this.btnAttack1.Text = "Slash";
             this.btnAttack1.UseVisualStyleBackColor = true;
             // 
             // btnAttack2
             // 
-            this.btnAttack2.Location = new System.Drawing.Point(611, 516);
+            this.btnAttack2.Location = new System.Drawing.Point(356, 459);
             this.btnAttack2.Name = "btnAttack2";
-            this.btnAttack2.Size = new System.Drawing.Size(75, 23);
+            this.btnAttack2.Size = new System.Drawing.Size(133, 80);
             this.btnAttack2.TabIndex = 3;
             this.btnAttack2.Text = "Kick";
             this.btnAttack2.UseVisualStyleBackColor = true;
             // 
             // btnHeal
             // 
-            this.btnHeal.Location = new System.Drawing.Point(692, 516);
+            this.btnHeal.Location = new System.Drawing.Point(634, 459);
             this.btnHeal.Name = "btnHeal";
-            this.btnHeal.Size = new System.Drawing.Size(75, 23);
+            this.btnHeal.Size = new System.Drawing.Size(133, 80);
             this.btnHeal.TabIndex = 4;
             this.btnHeal.Text = "Heal";
             this.btnHeal.UseVisualStyleBackColor = true;
@@ -95,16 +99,56 @@
             // 
             // HealthBarEnemy
             // 
-            this.HealthBarEnemy.Location = new System.Drawing.Point(12, 145);
+            this.HealthBarEnemy.Location = new System.Drawing.Point(12, 129);
             this.HealthBarEnemy.Name = "HealthBarEnemy";
             this.HealthBarEnemy.Size = new System.Drawing.Size(133, 23);
             this.HealthBarEnemy.TabIndex = 6;
+            // 
+            // lblEnemy
+            // 
+            this.lblEnemy.AutoSize = true;
+            this.lblEnemy.Location = new System.Drawing.Point(30, 309);
+            this.lblEnemy.Name = "lblEnemy";
+            this.lblEnemy.Size = new System.Drawing.Size(110, 21);
+            this.lblEnemy.TabIndex = 7;
+            this.lblEnemy.Text = "EnemyName";
+            // 
+            // lblPlayer
+            // 
+            this.lblPlayer.AutoSize = true;
+            this.lblPlayer.Location = new System.Drawing.Point(550, 309);
+            this.lblPlayer.Name = "lblPlayer";
+            this.lblPlayer.Size = new System.Drawing.Size(85, 17);
+            this.lblPlayer.TabIndex = 8;
+            this.lblPlayer.Text = "PlayerName";
+            // 
+            // lblBattleP
+            // 
+            this.lblBattleP.AutoSize = true;
+            this.lblBattleP.Location = new System.Drawing.Point(550, 352);
+            this.lblBattleP.Name = "lblBattleP";
+            this.lblBattleP.Size = new System.Drawing.Size(53, 17);
+            this.lblBattleP.TabIndex = 9;
+            this.lblBattleP.Text = "BattleP";
+            // 
+            // lblBattleE
+            // 
+            this.lblBattleE.AutoSize = true;
+            this.lblBattleE.Location = new System.Drawing.Point(30, 352);
+            this.lblBattleE.Name = "lblBattleE";
+            this.lblBattleE.Size = new System.Drawing.Size(53, 17);
+            this.lblBattleE.TabIndex = 10;
+            this.lblBattleE.Text = "BattleE";
             // 
             // BattleScreen
             // 
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(779, 551);
             this.ControlBox = false;
+            this.Controls.Add(this.lblBattleE);
+            this.Controls.Add(this.lblBattleP);
+            this.Controls.Add(this.lblPlayer);
+            this.Controls.Add(this.lblEnemy);
             this.Controls.Add(this.HealthBarEnemy);
             this.Controls.Add(this.HealthBarPlayer);
             this.Controls.Add(this.btnHeal);
@@ -119,6 +163,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,5 +177,9 @@
         private System.Windows.Forms.Button btnHeal;
         private System.Windows.Forms.ProgressBar HealthBarPlayer;
         private System.Windows.Forms.ProgressBar HealthBarEnemy;
+        private System.Windows.Forms.Label lblEnemy;
+        private System.Windows.Forms.Label lblPlayer;
+        private System.Windows.Forms.Label lblBattleP;
+        private System.Windows.Forms.Label lblBattleE;
     }
 }

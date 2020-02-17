@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VikingsInterface.Views;
 
 namespace VikingsInterface
 {
     public partial class Form1 : Form
     {
+        //Sound sound = new Sound();
         public Form1()
         {
             InitializeComponent();
+            //sound.StoryBackground();
+            picGoblin.BackColor = Color.Transparent;
+            picGoblin2.BackColor = Color.Transparent;
+            picPlayer.BackColor = Color.Transparent;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
         }
 
@@ -50,19 +56,23 @@ namespace VikingsInterface
         }
         private void CheckEdges(int x, int y)
         {
-            int xG = picGoblin.Location.X;
-            int yG = picGoblin.Location.Y;
             if (picPlayer.Bounds.IntersectsWith(picGoblin.Bounds))
             {
-                var myForm = new BattleScreen(picGoblin);
+                var myForm = new BattleScreen(picGoblin, 1);
                 myForm.Show();
             }
-            if (picPlayer.Bounds.IntersectsWith(picGoblin2.Bounds))
+            else if (picPlayer.Bounds.IntersectsWith(picGoblin2.Bounds))
             {
-                var myForm = new BattleScreen(picGoblin2);
+                var myForm = new BattleScreen(picGoblin2, 2);
                 myForm.Show();
+                this.Hide();
             }
-
+            else if (picPlayer.Bounds.IntersectsWith(picTown.Bounds))
+            {
+                var myForm = new Town();
+                myForm.Show();
+                this.Hide();
+            }
         }
     }
 }

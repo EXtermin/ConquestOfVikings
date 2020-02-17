@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QonquestOfVikings.Properties {
+namespace VikingsInterface.Properties {
     using System;
     
     

@@ -4,8 +4,8 @@
  using System.Text;
  using System.Threading.Tasks;
 
- namespace QonquestOfVikings
- {
+ namespace VikingsInterface
+{
      class Goblin : Mannequin
      {
          Random rnd;

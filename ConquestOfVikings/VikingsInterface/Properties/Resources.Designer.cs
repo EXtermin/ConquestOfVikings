@@ -83,6 +83,16 @@ namespace VikingsInterface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GoblinShop {
+            get {
+                object obj = ResourceManager.GetObject("GoblinShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HeavyGoblin {
             get {
                 object obj = ResourceManager.GetObject("HeavyGoblin", resourceCulture);
