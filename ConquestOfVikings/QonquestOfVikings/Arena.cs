@@ -25,9 +25,13 @@ namespace QonquestOfVikings
             {
                 enemy.battleGoblinArena();
             }
+            else if (choice == "2")
+            {
+                enemy.battleBanditArena();
+            }
             else
             {
-                back.Middle();
+               back.MainTown();
             }
 
         }
