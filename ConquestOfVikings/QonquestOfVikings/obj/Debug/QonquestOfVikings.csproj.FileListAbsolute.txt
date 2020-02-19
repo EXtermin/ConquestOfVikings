@@ -21,3 +21,6 @@ D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfViki
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.csproj.GenerateResource.cache
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.exe
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\obj\Debug\QonquestOfVikings.pdb
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe.config
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.exe
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\QonquestOfVikings\bin\Debug\QonquestOfVikings.pdb

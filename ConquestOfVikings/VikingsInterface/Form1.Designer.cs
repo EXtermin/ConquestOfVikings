@@ -63,7 +63,7 @@
             // 
             this.picGoblin.BackColor = System.Drawing.Color.Red;
             this.picGoblin.Image = global::VikingsInterface.Properties.Resources.BasicGoblin;
-            this.picGoblin.Location = new System.Drawing.Point(25, 109);
+            this.picGoblin.Location = new System.Drawing.Point(25, 119);
             this.picGoblin.Name = "picGoblin";
             this.picGoblin.Size = new System.Drawing.Size(378, 111);
             this.picGoblin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             // 
             this.picPlayer.BackColor = System.Drawing.Color.White;
             this.picPlayer.Image = global::VikingsInterface.Properties.Resources.Player;
-            this.picPlayer.Location = new System.Drawing.Point(638, 230);
+            this.picPlayer.Location = new System.Drawing.Point(654, 227);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(106, 92);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
