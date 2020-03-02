@@ -66,6 +66,7 @@
     <Compile Include="Models\Enemy.cs" />
     <Compile Include="Models\Goblin.cs" />
     <Compile Include="Models\Mannequin.cs" />
+    <Compile Include="Models\Movement.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\SavegameManager.cs" />
     <Compile Include="Models\Shop.cs" />

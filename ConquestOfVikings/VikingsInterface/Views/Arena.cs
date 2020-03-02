@@ -26,26 +26,22 @@ namespace VikingsInterface.Views
             {
                 y -= 10;
                 picPlayer.Location = new Point(x, y);
-                CheckEdges(x, y);
             }
             if (e.KeyCode == Keys.D)
             {
                 x += 10;
                 picPlayer.Location = new Point(x, y);
-                CheckEdges(x, y);
 
             }
             if (e.KeyCode == Keys.A)
             {
                 x -= 10;
                 picPlayer.Location = new Point(x, y);
-                CheckEdges(x, y);
             }
             if (e.KeyCode == Keys.S)
             {
                 y += 10;
                 picPlayer.Location = new Point(x, y);
-                CheckEdges(x, y);
             }
         }
         public void CheckEdges(int x, int y)

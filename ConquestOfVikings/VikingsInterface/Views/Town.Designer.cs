@@ -41,7 +41,7 @@
             this.picPlayer.Image = global::VikingsInterface.Properties.Resources.Player;
             this.picPlayer.Location = new System.Drawing.Point(12, 143);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(79, 92);
+            this.picPlayer.Size = new System.Drawing.Size(106, 92);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlayer.TabIndex = 1;
             this.picPlayer.TabStop = false;
@@ -77,7 +77,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Town";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Town";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picShop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picArena)).EndInit();
