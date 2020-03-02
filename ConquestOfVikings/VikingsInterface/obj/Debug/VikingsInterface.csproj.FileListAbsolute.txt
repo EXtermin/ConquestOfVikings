@@ -7,3 +7,9 @@ D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterfa
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.csproj.GenerateResource.cache
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.exe
 D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.pdb
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.BattleScreen.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Properties.GameSounds.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Views.Arena.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Views.Shop.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Views.Town.resources
+D:\VisualStudio\Repos\Vikings\ConquestOfVikings\ConquestOfVikings\VikingsInterface\obj\Debug\VikingsInterface.Views.ShopWindow.resources
